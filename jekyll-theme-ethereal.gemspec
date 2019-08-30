@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["apehex"]
   spec.email         = ["apehex@protonmail.com"]
 
-  spec.summary       = "An outstanding horizontal scrolling Jekyll template."
+  spec.summary       = "An outstanding Jekyll template in a horizontal layout."
   spec.homepage      = "https://github.com/apehex/jekyll-theme-ethereal"
   spec.license       = "CC-BY-4.0"
 

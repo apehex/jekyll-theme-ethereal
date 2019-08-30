@@ -518,9 +518,11 @@ Credits:
 		Responsive Tools (github.com/ajlkn/responsive-tools)
 ```
 
-Inspired by the conversions of [Andrew Banchich][andrew-banchich].
+Inspired by the similar ports made by [Andrew Banchich][andrew-banchich].
 
 Uses the basic template from the [cookie consent plugin][cookieconsent].
+
+Demo images courtesy of NASA.
 
 Repository [Jekyll logo][jekyll-logo] icon licensed under a [Creative Commons Attribution 4.0 International License][cc4-license].
 

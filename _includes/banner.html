@@ -1,0 +1,14 @@
+<!-- Banner -->
+<section class="{{ include.style.class | default: 'panel banner right' }}">
+    <div class="content color0 span-3-75">
+        <h1 class="major">{{ include.title }}<br />
+        {{ include.subtitle }}</h1>
+        <p>{{ include.description }}</p>
+        <ul class="actions">
+            <li><a href="#first" class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
+        </ul>
+    </div>
+    <div class="image filtered span-1-75" data-position="25% 25%">
+        <img src="{{ include.style.background | absolute_url }}" alt="" />
+    </div>
+</section>
