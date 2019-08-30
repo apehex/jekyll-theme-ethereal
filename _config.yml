@@ -1,0 +1,86 @@
+# Site settings
+title: Ethereal
+subtitle: by HTML5 Up
+description: >- # this means to ignore newlines until "baseurl:"
+  This is Ethereal, my latest, greatest, and quite possibly most unique template for HTML5 UP.
+  Since releasing Parallelism 3-4 years ago (!!!), I've been dying to do another side-scrolling
+  template with more in the way of flexibility/customization potential. The result is this template,
+  Ethereal, which combines a robust side-scrolling framework of my own creation (with various
+  "scroll-assist" features like drag/momentum scrolling, keyboard shortcuts, etc.) with a unique
+  look and feel, a lightbox gallery, tons of customization options, and, of course, full
+  responsiveness. Hope you dig it :)
+
+# Contact information
+street_address: 1234 Somewhere Road
+city: Nashville
+state: TN
+zip_code: 55555
+country: United States of America
+phone: (716) 555-5555
+email: youremailaddress@gmail.com
+
+# Social settings
+500px_url: https://github.com/apehex
+facebook_url: https://github.com/apehex
+github_url: https://github.com/apehex
+gitlab_url: https://github.com/apehex
+instagram_url: https://github.com/apehex
+linkedin_url: https://github.com/apehex
+medium_url: https://github.com/apehex
+pinterest_url: https://github.com/apehex
+slack_url: https://github.com/apehex
+snapchat_url: https://github.com/apehex
+twitter_url: https://github.com/apehex
+
+# Optional elements
+logo_url: /assets/images/logo.svg
+favicon_url: /assets/images/favicon.ico
+legal_terms_url: /legal-terms
+privacy_policy_url: /privacy-policy
+
+# Privacy notice
+hosting_third_party: github
+
+# Collections
+collections:
+  redirects:
+    output: true
+    permalink: /:path/
+
+# Default settings
+defaults:
+  -
+    scope:
+      type: "redirects"
+    values:
+      layout: "redirect"
+      lang: "x-default"
+  -
+    scope:
+      path: ""
+    values:
+      menu: default
+  -
+    scope:
+      path: "en"
+    values:
+      lang: "en"
+  -
+    scope:
+      path: "fr"
+    values:
+      lang: "fr"
+
+# Build settings
+permalink: pretty
+markdown: kramdown
+sass:
+  style: compressed
+
+# Publication settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://apehex.github.io/jekyll-theme-ethereal" # the base hostname & protocol for your site, e.g. http://example.com
+author: HTML5 Up
+copyright_holder: Untitled
+
+# Exclude from processing

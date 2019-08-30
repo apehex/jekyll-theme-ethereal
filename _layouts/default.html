@@ -1,0 +1,46 @@
+---
+---
+{% assign lang = page.lang | default: site.lang | default: 'en' %}
+{% assign menu = site.data.translations.menu[page.menu][lang] %}
+{% assign header = page.header | default: site.header %}
+{% assign title = page.title | default: site.title %}
+{% assign subtitle = page.subtitle | default: site.subtitle %}
+{% assign description = page.description | default: site.description %}
+
+<!DOCTYPE html>
+<!--
+    Consulting theme by apehex
+    https://github.com/apehex
+    Free for personal and commercial use under the CCA 4.0 license
+-->
+<html lang="{{ lang }}">
+
+{% include head.html title=title subtitle=subtitle %}
+
+<body>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                {% include header.html title=header.title subtitle=header.subtitle style=header.style %}
+
+                {{ content }}
+
+            </div>
+        </div>
+
+        {% include sidebar.html menu=menu %}
+
+    </div>
+
+    {% include footer.html %}
+
+    {% include scripts.html %}
+
+</body>
+
+</html>
