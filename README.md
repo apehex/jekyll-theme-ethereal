@@ -1,6 +1,6 @@
-# Ethereal - Jekyll theme
+# Ethereal - Jekyll template
 
-> A Jekyll version of the "Ethereal" theme by [HTML5 UP][html5up].
+> :rainbow: An augmented version of the "Ethereal" theme by [HTML5 UP][html5up], ported to Jekyll.
 
 You can preview the theme [here](https://apehex.github.io/jekyll-theme-ethereal
 
@@ -14,7 +14,7 @@ You can preview the theme [here](https://apehex.github.io/jekyll-theme-ethereal
 
 > **Customizable**: theme colors, header, banner, menu, social items can be changed from a central config file
 
-> **Many page templates**: contact forms, navigation menus, and others can be easily inserted thanks to custom Jekyll includes
+> **Many templates**: contact forms, galleries, and others can be easily inserted thanks to custom Jekyll includes
 
 > **Vector images**: the theme images are vectorized, render smoothly on any display and can be dynamically styled
 
@@ -528,7 +528,7 @@ Repository [Jekyll logo][jekyll-logo] icon licensed under a [Creative Commons At
 
 ## License
 
-The theme is available as open source under the terms of the [CC-BY-3.0](LICENSE).
+The theme is available as open source under the terms of the [CC-BY-4.0](LICENSE).
 
 [andrew-banchich]: https://gitlab.com/andrewbanchich
 [cc4-license]: http://choosealicense.com/licenses/cc-by-4.0/
