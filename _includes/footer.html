@@ -1,9 +1,14 @@
 <!-- Footer -->
 <footer id="footer">
-    <div class="copyright">
-    	&copy; {{ site.copyright_holder }}. All rights reserved.
-    	Design: <a href="https://html5up.net">HTML5 UP</a>.
-    	{% if site.privacy_policy_url %}<a href="{{ site.privacy_policy_url | absolute_url }}">Privacy policy</a>.{% endif %}
-    	{% if site.legal_terms_url %}<a href="{{ site.legal_terms_url | absolute_url }}">Legal terms</a>.{% endif %}
-    </div>
+    <ul class="copyright">
+        <li>&copy; {{ site.copyright_holder }}</li>
+        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        <li>Jekyll integration: <a href="http://github.com/apehex" target="_blank">apehex</a></li>
+        {% if site.legal_terms_url %}
+        <li><a href="{{ site.legal_terms_url | absolute_url }}" target="_blank">Legal Terms</a></li>
+        {% endif %}
+        {% if site.privacy_policy_url %}
+        <li><a href="{{ site.privacy_policy_url | absolute_url }}" target="_blank">Privacy Policy</a></li>
+        {% endif %}
+    </ul>
 </footer>

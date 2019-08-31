@@ -1,0 +1,12 @@
+<!-- Spotlight -->
+<section
+class="panel spotlight {{ include.style.size | default: 'medium' }} {{ include.style.text.position | default: 'right' }} {{ include.style.background.color }}"
+id="{{ include.id | default: 'spotlight' }}">
+    <div class="content span-7">
+        <h2 class="major">{{ include.title }}</h2>
+        <p>{{ include.description }}</p>
+    </div>
+    <div class="image filtered tinted" data-position="bottom right">
+        <img src="{{ include.style.background.image | absolute_url }}" alt="" />
+    </div>
+</section>

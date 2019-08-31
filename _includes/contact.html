@@ -1,38 +1,34 @@
-<section id="contact" class="inverted" style="{{ include.style | default: nil }}">
-    <header class="major">
-        <h2>Contact Me</h2>
-    </header>
-    <div class="row gtr-200">
-        <div class="col-6 col-12-medium">
+<section
+class="panel {{ include.style.background.color | default: 'color4-alt' }}"
+id="{{ include.id | default: 'contact' }}">
+    <div class="intro {{ include.style.header.color | default: 'color4' }}">
+        <h2 class="major">{{ include.title | default: 'Contact'}}</h2>
+        <p>{{ include.description }}</p>
+    </div>
+    <div class="inner columns divided">
+        <div class="span-3-25">
             <form method="post" action="#">
-                <div class="row gtr-uniform">
-                    <div class="col-6 col-12-xsmall">
-                        <input type="text" name="cta-name" id="cta-name" value="" placeholder="Name" />
+                <div class="fields">
+                    <div class="field half">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" />
                     </div>
-                    <div class="col-6 col-12-xsmall">
-                        <input type="email" name="cta-email" id="cta-email" value="" placeholder="Email" />
+                    <div class="field half">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" />
                     </div>
-                    <!-- Break -->
-                    <div class="col-12">
-                        <textarea name="cta-message" id="cta-message" placeholder="Enter your message" rows="6">Please get back to me!</textarea>
-                    </div>
-                    <!-- Break -->
-                    <div class="col-12">
-                        <ul class="actions">
-                            <li><input type="submit" value="Send Message" class="primary button solid fa-envelope" /></li>
-                            <li><input type="reset" value="Reset" class="icon button fa-undo" /></li>
-                        </ul>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="4"></textarea>
                     </div>
                 </div>
+                <ul class="actions">
+                    <li><input type="submit" value="Send Message" class="button primary" /></li>
+                </ul>
             </form>
         </div>
-        <div class="col-6 col-12-medium">
-            <ul class="contact">
-                <li class="icon solid fa-envelope"><a href="#">{{ site.email }}</a></li>
-                <li class="icon solid fa-phone">{{ site.phone }}</li>
-                <li class="icon solid fa-home">{{ site.street_address }}<br />
-                {{ site.zip_code }}, {{ site.city }}</li>
-            </ul>
+        <div class="span-1-5">
+            {% include social.html color=include.style.icons.color %}
         </div>
     </div>
 </section>

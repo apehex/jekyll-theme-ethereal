@@ -1,38 +1,36 @@
 <!-- Social Icons -->
-<div id="social">
-    <ul class="icons">
-        {% if site.twitter_url %}
-        <li><a href="{{ site.twitter_url }}" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-        {% endif %}
-        {% if site.facebook_url %}
-        <li><a href="{{ site.facebook_url }}" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
-        {% endif %}
-        {% if site.snapchat_url %}
-        <li><a href="{{ site.snapchat_url }}" class="icon brands fa-snapchat-ghost" target="_blank"><span class="label">Snapchat</span></a></li>
-        {% endif %}
-        {% if site.medium_url %}
-        <li><a href="{{ site.medium_url }}" class="icon brands fa-medium-m" target="_blank"><span class="label">Medium</span></a></li>
-        {% endif %}
-        {% if site.instagram_url %}
-        <li><a href="{{ site.instagram_url }}" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-        {% endif %}
-        {% if site.pinterest_url %}
-        <li><a href="{{ site.pinterest_url }}" class="icon brands fa-pinterest" target="_blank"><span class="label">Pinterest</span></a></li>
-        {% endif %}
-        {% if site.500px_url %}
-        <li><a href="{{ site.500px_url }}" class="icon brands fa-500px" target="_blank"><span class="label">500px</span></a></li>
-        {% endif %}
-        {% if site.gitlab_url %}
-        <li><a href="{{ site.gitlab_url }}" class="icon brands fa-gitlab" target="_blank"><span class="label">GitLab</span></a></li>
-        {% endif %}
-        {% if site.github_url %}
-        <li><a href="{{ site.github_url }}" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-        {% endif %}
-        {% if site.slack_url %}
-        <li><a href="{{ site.slack_url }}" class="icon brands fa-slack" target="_blank"><span class="label">Slack</span></a></li>
-        {% endif %}
-        {% if site.linkedin_url %}
-        <li><a href="{{ site.linkedin_url }}" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-        {% endif %}
-    </ul>
-</div>
+<ul class="contact-icons {{ include.color | default: 'color1' }}">
+    {% if site.twitter.url %}
+    <li class="icon brands fa-twitter"><a href="{{ site.twitter.url }}" target="_blank"><span class="label">{{ site.twitter.label }}</span></a></li>
+    {% endif %}
+    {% if site.facebook.url %}
+    <li class="icon brands fa-facebook-f"><a href="{{ site.facebook.url }}" target="_blank"><span class="label">{{ site.facebook.label }}</span></a></li>
+    {% endif %}
+    {% if site.snapchat.url %}
+    <li class="icon brands fa-snapchat-ghost"><a href="{{ site.snapchat.url }}" target="_blank"><span class="label">{{ site.snapchat.label }}</span></a></li>
+    {% endif %}
+    {% if site.medium.url %}
+    <li class="icon brands fa-medium-m"><a href="{{ site.medium.url }}" target="_blank"><span class="label">{{ site.medium.label }}</span></a></li>
+    {% endif %}
+    {% if site.instagram.url %}
+    <li class="icon brands fa-instagram"><a href="{{ site.instagram.url }}" target="_blank"><span class="label">{{ site.instagram.label }}</span></a></li>
+    {% endif %}
+    {% if site.pinterest.url %}
+    <li class="icon brands fa-pinterest"><a href="{{ site.pinterest.url }}" target="_blank"><span class="label">{{ site.pinterest.label }}</span></a></li>
+    {% endif %}
+    {% if site.500px.url %}
+    <li class="icon brands fa-500px"><a href="{{ site.500px.url }}" target="_blank"><span class="label">{{ site.500px.label }}</span></a></li>
+    {% endif %}
+    {% if site.gitlab.url %}
+    <li class="icon brands fa-gitlab"><a href="{{ site.gitlab.url }}" target="_blank"><span class="label">{{ site.gitlab.label }}</span></a></li>
+    {% endif %}
+    {% if site.github.url %}
+    <li class="icon brands fa-github"><a href="{{ site.github.url }}" target="_blank"><span class="label">{{ site.github.label }}</span></a></li>
+    {% endif %}
+    {% if site.slack.url %}
+    <li class="icon brands fa-slack"><a href="{{ site.slack.url }}" target="_blank"><span class="label">{{ site.slack.label }}</span></a></li>
+    {% endif %}
+    {% if site.linkedin.url %}
+    <li class="icon brands fa-linkedin"><a href="{{ site.linkedin.url }}" target="_blank"><span class="label">{{ site.linkedin.label }}</span></a></li>
+    {% endif %}
+</ul>

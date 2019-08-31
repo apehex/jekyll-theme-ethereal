@@ -1,14 +1,22 @@
 <!-- Banner -->
-<section class="{{ include.style.class | default: 'panel banner right' }}">
-    <div class="content color0 span-3-75">
+<section
+class="panel banner {{ include.style.text.position | default: 'right' }} {{ include.style.background.color }}"
+id="{{ include.id | default: 'banner' }}">
+    <div class="content {{ include.style.header.color | default: 'color0' }} span-3-75">
         <h1 class="major">{{ include.title }}<br />
         {{ include.subtitle }}</h1>
         <p>{{ include.description }}</p>
         <ul class="actions">
-            <li><a href="#first" class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
+            <li>
+                <a
+                href="{{ include.button.target }}"
+                class="button primary color1 circle icon solid fa-angle-right">
+                    {{ include.button.label | default: 'Next'}}
+                </a>
+            </li>
         </ul>
     </div>
     <div class="image filtered span-1-75" data-position="25% 25%">
-        <img src="{{ include.style.background | absolute_url }}" alt="" />
+        <img src="{{ include.style.background.image | absolute_url }}" alt="" />
     </div>
 </section>
