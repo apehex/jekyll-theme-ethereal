@@ -111,6 +111,7 @@
 
 // Component.
 
+	@import 'components/cookieconsent';
 	@import 'components/form';
 	@import 'components/icon';
 	@import 'components/image';
@@ -128,5 +129,7 @@
 
 // Layout.
 
+	@import 'layout/footer';
+	@import 'layout/header';
 	@import 'layout/page-wrapper';
 	@import 'layout/wrapper';
