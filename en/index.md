@@ -4,56 +4,115 @@ lang-ref: home-page
 title: "Ethereal"
 subtitle: "A Horizontal Jekyll Template"
 banner:
-    title: "Ethereal Jekyll Template"
+    id: "banner"
+    title: "Ethereal Template"
     subtitle: "by HTML5 Up"
-    description: "This is <strong>Ethereal</strong>, a free site template by AJ for <a href="https://html5up.net">HTML5 UP</a>. It’s fully responsive, built on HTML5 and CSS3, and released entirely for free under the Creative Commons license. Hope you dig it :)"
+    description: >-
+        This is <strong>Ethereal</strong>, a free static site template designed by AJ for <a href='https://html5up.net'>HTML5 UP</a> and ported to Jekyll by <a href='https://apehex.github.io'>apehex</a>. It’s fully responsive, built on HTML5 and CSS3, and released entirely for free under the Creative Commons license. Hope you dig it :)
+    button:
+        target: "#first"
+        label: "Next"
     style:
-        class: "panel banner right"
-        background: "assets/images/pillars-of-creation.jpg"
+        size: "medium"
+        text:
+            position: "right"
+        header:
+            color: "color0"
+        background:
+            image: "assets/images/pillars-of-creation.jpg"
+            color:
+first:
+    id: first
+    title: Sed etiam aenean
+    description: >-
+        Mauris et ligula arcu. Proin dapibus convallis accumsan. Lorem maximus hendrerit orci, sit amet elementum massa hendrerit sed. Donec et ullamcorper ligula. Suspendisse amet potenti. Ut pretium libero eleifend euismod sed tristique. Quisque dictum magna risus, id ultricies justo sagittis vitae. Sed id odio tempor, porttitor elit amet, gravida hendrerit fringilla lorem ipsum dolor.
+    style:
+        size: large
+        text:
+            position: right
+        background:
+            image: "assets/images/orion_las.jpg"
+            color: color2
+second:
+    id: second
+    title: Amet lorem
+    description: >-
+        Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar. Vivamus sed feugiat finibus. Duis amet bibendum amet sed. Duis mauris ex, dapibus sed ligula tempus volutpat magna etiam.
+    style:
+        size: medium
+        text:
+            position: left
+        background:
+            image:
+            color: color1
+third:
+    id: third
+    title: Magna amet tempus
+    description: >-
+        Mauris a cursus velit. Nunc lacinia sollicitudin egestas bibendum, magna dui bibendum ex, sagittis commodo enim risus sed magna nulla. Vestibulum ut consequat velit. Curabitur vitae libero lorem. Quisque iaculis porttitor blandit. Nullam quis sagittis maximus. Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar.
+    style:
+        size: large
+        text:
+            position: left
+        background:
+            image: "assets/images/zeta-ophiuchi.jpg"
+            color:
+fourth:
+    id:
+    title:
+    description:
+    content:
+        gallery:
+            -
+                - url:
+                  position:
+                  span:
+                - url:
+                  position:
+                  span:
+                - url:
+                  position:
+                  span:
+            - url:
+              position:
+              span:
+            -
+                - url:
+                  position:
+                  span:
+                - url:
+                  position:
+                  span:
+                - url:
+                  position:
+                  span:
+                - url:
+                  position:
+                  span:
+    style:
+contact:
+    id: contact
+    title: Contact
+    description: >-
+        Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar. Vivamus sed feugiat finibus. Duis amet bibendum amet sed. Duis mauris ex, dapibus sed ligula tempus volutpat magna etiam.
+    style:
+        size: large
+        background:
+            color: color4-alt
+        header:
+            color: color4
+        icons:
+            color: color1
 ---
 
-<!-- Panel (Spotlight) -->
-<section class="panel spotlight medium right" id="first">
-    <div class="content span-7">
-        <h2 class="major">Sed etiam aenean</h2>
-        <p>Mauris et ligula arcu. Proin dapibus convallis accumsan. Lorem maximus hendrerit orci, sit amet elementum massa hendrerit sed. Donec et ullamcorper ligula. Suspendisse amet potenti. Ut pretium libero eleifend euismod sed tristique. Quisque dictum magna risus, id ultricies justo sagittis vitae. Sed id odio tempor, porttitor elit amet, gravida hendrerit fringilla lorem ipsum dolor.</p>
-    </div>
-    <div class="image filtered tinted" data-position="top left">
-        <img src="{{ 'assets/images/pic02.jpg' | absolute_url }}" alt="" />
-    </div>
-</section>
+{% include spotlight.html id=page.first.id title=page.first.title description=page.first.description style=page.first.style %}
+
+{% include panel.html id=page.second.id title=page.second.title description=page.second.description style=page.second.style %}
+
+{% include spotlight.html id=page.third.id title=page.third.title description=page.third.description style=page.third.style %}
 
 <!-- Panel -->
-<section class="panel color1">
-    <div class="intro joined">
-        <h2 class="major">Amet lorem</h2>
-        <p>Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar. Vivamus sed feugiat finibus. Duis amet bibendum amet sed. Duis mauris ex, dapibus sed ligula tempus volutpat magna etiam.</p>
-    </div>
-    <div class="inner">
-        <ul class="grid-icons three connected">
-            <li><span class="icon fa-gem"><span class="label">Lorem</span></span></li>
-            <li><span class="icon solid fa-camera-retro"><span class="label">Ipsum</span></span></li>
-            <li><span class="icon solid fa-cog"><span class="label">Dolor</span></span></li>
-            <li><span class="icon solid fa-paper-plane"><span class="label">Sit</span></span></li>
-            <li><span class="icon solid fa-chart-bar"><span class="label">Amet</span></span></li>
-            <li><span class="icon solid fa-code"><span class="label">Nullam</span></span></li>
-        </ul>
-    </div>
-</section>
-
-<!-- Panel (Spotlight) -->
-<section class="panel spotlight large left">
-    <div class="content span-5">
-        <h2 class="major">Magna amet tempus</h2>
-        <p>Mauris a cursus velit. Nunc lacinia sollicitudin egestas bibendum, magna dui bibendum ex, sagittis commodo enim risus sed magna nulla. Vestibulum ut consequat velit. Curabitur vitae libero lorem. Quisque iaculis porttitor blandit. Nullam quis sagittis maximus. Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar.</p>
-    </div>
-    <div class="image filtered tinted" data-position="top right">
-        <img src="{{ 'assets/images/pic03.jpg' | absolute_url }}" alt="" />
-    </div>
-</section>
-
-<!-- Panel -->
-<section class="panel">
+<section class="panel color0">
     <div class="intro color2">
         <h2 class="major">Elit integer</h2>
         <p>Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar. Vivamus sed feugiat finibus. Duis amet bibendum amet sed. Duis mauris ex, dapibus sed ligula tempus volutpat magna etiam.</p>
@@ -75,45 +134,7 @@ banner:
     </div>
 </section>
 
-<!-- Panel -->
-<section class="panel color4-alt">
-    <div class="intro color4">
-        <h2 class="major">Contact</h2>
-        <p>Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar. Vivamus sed feugiat finibus. Duis amet bibendum amet sed. Duis mauris ex, dapibus sed ligula tempus volutpat magna etiam.</p>
-    </div>
-    <div class="inner columns divided">
-        <div class="span-3-25">
-            <form method="post" action="#">
-                <div class="fields">
-                    <div class="field half">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" />
-                    </div>
-                    <div class="field half">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" />
-                    </div>
-                    <div class="field">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" rows="4"></textarea>
-                    </div>
-                </div>
-                <ul class="actions">
-                    <li><input type="submit" value="Send Message" class="button primary" /></li>
-                </ul>
-            </form>
-        </div>
-        <div class="span-1-5">
-            <ul class="contact-icons color1">
-                <li class="icon brands fa-twitter"><a href="#">@untitled-tld</a></li>
-                <li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled</a></li>
-                <li class="icon brands fa-snapchat-ghost"><a href="#">@untitled-tld</a></li>
-                <li class="icon brands fa-instagram"><a href="#">@untitled-tld</a></li>
-                <li class="icon brands fa-medium-m"><a href="#">medium.com/untitled</a></li>
-            </ul>
-        </div>
-    </div>
-</section>
+{% include contact.html id=page.contact.id title=page.contact.title description=page.contact.description style=page.contact.style %}
 
 <!-- Panel -->
 <section class="panel color2-alt">
