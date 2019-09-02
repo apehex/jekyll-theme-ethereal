@@ -11,6 +11,8 @@
     
     <xhtml:link rel="alternate" hreflang="" href="https://apehex.github.io/jekyll-theme-ethereal/" />
     
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-ethereal/en/" />
+    
     <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-ethereal/fr/" />
     
     <changefreq>weekly</changefreq>
@@ -44,7 +46,11 @@
   <url>
     <loc>https://apehex.github.io/jekyll-theme-ethereal/en/</loc>
     
+    <xhtml:link rel="alternate" hreflang="" href="https://apehex.github.io/jekyll-theme-ethereal/" />
+    
     <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-ethereal/en/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-ethereal/fr/" />
     
     <changefreq>weekly</changefreq>
   </url>
@@ -56,6 +62,8 @@
     <loc>https://apehex.github.io/jekyll-theme-ethereal/fr/</loc>
     
     <xhtml:link rel="alternate" hreflang="" href="https://apehex.github.io/jekyll-theme-ethereal/" />
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-ethereal/en/" />
     
     <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-ethereal/fr/" />
     
