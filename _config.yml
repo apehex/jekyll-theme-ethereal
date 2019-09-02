@@ -55,6 +55,12 @@ hosting_third_party: github
 
 # Collections
 collections:
+  demo:
+    output: false
+    sort_by: position
+  home:
+    output: false
+    sort_by: position
   redirects:
     output: true
     permalink: /:path/
