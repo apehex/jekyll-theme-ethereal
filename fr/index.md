@@ -5,15 +5,15 @@ title: "Ethereal"
 subtitle: "A Horizontal Jekyll Template"
 banner:
     id: "banner"
-    title: "Ethereal Template"
-    subtitle: "by HTML5 Up"
-    description: >-
-        This is <strong>Ethereal</strong>, a free static site template designed by AJ for <a href='https://html5up.net'>HTML5 UP</a> and ported to Jekyll by <a href='https://apehex.github.io'>apehex</a>. It’s fully responsive, built on HTML5 and CSS3, and released entirely for free under the Creative Commons license. Hope you dig it :)
-    button:
-        target: "#first"
-        label: "Next"
+    header:
+        title: "Ethereal Template"
+        subtitle: "by HTML5 Up"
+        description: >-
+            This is <strong>Ethereal</strong>, a free static site template designed by AJ for <a href='https://html5up.net'>HTML5 UP</a> and ported to Jekyll by <a href='https://apehex.github.io'>apehex</a>. It’s fully responsive, built on HTML5 and CSS3, and released entirely for free under the Creative Commons license. Hope you dig it :)
+        button:
+            target: "#first"
+            label: "Next"
     style:
-        size: "medium"
         text:
             position: "right"
         header:
