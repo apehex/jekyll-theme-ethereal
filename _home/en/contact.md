@@ -1,6 +1,6 @@
 ---
-position: 5
-id: contact
+index: 5
+panel-id: contact
 type: contact
 header:
     title: Contact

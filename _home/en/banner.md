@@ -1,6 +1,6 @@
 ---
-position: 0
-id: "banner"
+index: 0
+panel-id: "banner"
 type: banner
 header:
     title: "Ethereal Template"

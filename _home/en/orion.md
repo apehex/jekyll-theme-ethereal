@@ -1,6 +1,6 @@
 ---
-position: 1
-id: first
+index: 1
+panel-id: first
 type: spotlight
 header:
     title: Sed etiam aenean

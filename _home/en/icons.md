@@ -1,6 +1,6 @@
 ---
-position: 2
-id: second
+index: 2
+panel-id: second
 type: generic
 header:
     title: Amet lorem
@@ -18,3 +18,13 @@ style:
         joined: joined
         span:
 ---
+<div class="inner">
+    <ul class="grid-icons three connected">
+        <li><span class="icon fa-gem"><span class="label">Lorem</span></span></li>
+        <li><span class="icon solid fa-camera-retro"><span class="label">Ipsum</span></span></li>
+        <li><span class="icon solid fa-cog"><span class="label">Dolor</span></span></li>
+        <li><span class="icon solid fa-paper-plane"><span class="label">Sit</span></span></li>
+        <li><span class="icon solid fa-chart-bar"><span class="label">Amet</span></span></li>
+        <li><span class="icon solid fa-code"><span class="label">Nullam</span></span></li>
+    </ul>
+</div>

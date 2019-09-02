@@ -5,6 +5,9 @@ title: "Ethereal"
 subtitle: "A Horizontal Jekyll Template"
 ---
 
-{% for item in site.home %}
-{% include panel.html type=item.type id=item.id header=item.header content=item.content style=item.style %}
+{% assign panels = site.home | sort: 'index' %}
+
+{% for item in panels %}
+{% assign content = item.content %}
+{% include panel.html type=item.type id=item.panel-id header=item.header style=item.style content=content %}
 {% endfor %}

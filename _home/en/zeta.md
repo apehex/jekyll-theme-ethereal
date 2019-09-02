@@ -1,6 +1,6 @@
 ---
-position: 3
-id: third
+index: 3
+panel-id: third
 type: spotlight
 header:
     title: Magna amet tempus
