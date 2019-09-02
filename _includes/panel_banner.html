@@ -1,0 +1,20 @@
+<!-- Banner -->
+<div class="content {{ include.style.header.color | default: 'color0' }} span-3-75">
+    <h1 class="major">{{ include.header.title }}<br />
+    {{ include.header.subtitle }}</h1>
+    <p>{{ include.header.description }}</p>
+    <ul class="actions">
+        <li>
+            <a
+            href="{{ include.header.button.target }}"
+            class="button primary color1 circle icon solid fa-angle-right">
+                {{ include.header.button.label | default: 'Next'}}
+            </a>
+        </li>
+    </ul>
+</div>
+<div
+class="image filtered span-1-75"
+data-position="{{ include.style.background.position | default: '25% 25%' }}">
+    <img src="{{ include.style.background.image | absolute_url }}" alt="" />
+</div>

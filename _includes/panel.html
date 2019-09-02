@@ -1,18 +1,13 @@
 <section
-class="panel {{ include.style.background.color }}"
-id="{{ include.id }}">
-    <div class="intro joined {{ include.style.header.color }}">
-        <h2 class="major">{{ include.title }}</h2>
-        <p>{{ include.description }}</p>
-    </div>
-    <div class="inner">
-        <ul class="grid-icons three connected">
-            <li><span class="icon fa-gem"><span class="label">Lorem</span></span></li>
-            <li><span class="icon solid fa-camera-retro"><span class="label">Ipsum</span></span></li>
-            <li><span class="icon solid fa-cog"><span class="label">Dolor</span></span></li>
-            <li><span class="icon solid fa-paper-plane"><span class="label">Sit</span></span></li>
-            <li><span class="icon solid fa-chart-bar"><span class="label">Amet</span></span></li>
-            <li><span class="icon solid fa-code"><span class="label">Nullam</span></span></li>
-        </ul>
-    </div>
+class="panel {{ include.type }} {{ include.style.size }} {{ include.style.text.position | default: 'right' }} {{ include.style.background.color }}"
+id="{{ include.id | default: include.type }}">
+{% if include.type=="banner" %}
+	{% include panel_banner.html header=include.header content=include.content style=include.style %}
+{% elsif include.type=="contact" %}
+	{% include panel_contact.html header=include.header content=include.content style=include.style %}
+{% elsif include.type=="spotlight" %}
+	{% include panel_spotlight.html header=include.header content=include.content style=include.style %}
+{% else %}
+	{% include panel_generic.html header=include.header content=include.content style=include.style %}
+{% endif %}
 </section>
