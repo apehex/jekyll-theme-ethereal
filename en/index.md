@@ -1,6 +1,6 @@
 ---
 layout: default
-lang-ref: test-page
+lang-ref: home-page
 title: "Ethereal"
 subtitle: "A Horizontal Jekyll Template"
 ---
