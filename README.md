@@ -1,8 +1,8 @@
 # Ethereal - Jekyll template
 
-> :rainbow: An augmented version of the "Ethereal" theme by [HTML5 UP][html5up], ported to Jekyll.
+> An augmented version of the "Ethereal" theme by [HTML5 UP][html5up], ported to Jekyll. :rainbow:
 
-You can preview the theme [here](https://apehex.github.io/jekyll-theme-ethereal
+You can preview the theme [here](https://apehex.github.io/jekyll-theme-ethereal)
 
 ![Ethereal Theme](assets/images/screenshot.jpg "Ethereal Theme")
 
