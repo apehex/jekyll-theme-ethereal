@@ -1,8 +1,8 @@
 ---
 layout: default
 lang-ref: home-page
-title: "Ethereal"
-subtitle: "A Horizontal Jekyll Template"
+title: "Jekyll Theme Ethereal"
+subtitle: "A Horizontal Site Template"
 ---
 
 {% assign panels = site.home | sort: 'index' %}

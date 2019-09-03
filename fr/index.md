@@ -1,13 +1,13 @@
 ---
 layout: home
 lang-ref: home-page
-title: "Ethereal"
-subtitle: "A Horizontal Jekyll Template"
+title: "Thème Jekyll Ethereal"
+subtitle: "Un Patron de Site Horizontal"
 banner:
     id: "banner"
     header:
-        title: "Ethereal Template"
-        subtitle: "by HTML5 Up"
+        title: "Thème Jekyll Ethereal"
+        subtitle: "par HTML5 Up"
         description: >-
             This is <strong>Ethereal</strong>, a free static site template designed by AJ for <a href='https://html5up.net'>HTML5 UP</a> and ported to Jekyll by <a href='https://apehex.github.io'>apehex</a>. It’s fully responsive, built on HTML5 and CSS3, and released entirely for free under the Creative Commons license. Hope you dig it :)
         button:
