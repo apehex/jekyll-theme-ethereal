@@ -11,9 +11,9 @@ style:
         position: left
     background:
         image:
-        color: color2
-    header:
         color: color2-alt
+    header:
+        color: color2
         joined: 
         span:
 ---
