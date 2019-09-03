@@ -45,10 +45,16 @@ twitter:
   label: "@untitled-tld"
 
 # Optional elements
-logo_url: /assets/images/logo.svg
-favicon_url: /assets/images/favicon.ico
-legal_terms_url: /legal-terms
-privacy_policy_url: /privacy-policy
+logo:
+  url: /assets/images/logo.svg
+  alt: logo
+favicon:
+  url: /assets/images/favicon.ico
+  alt: favicon
+legal_terms:
+  url: /en/legal-terms
+privacy_policy:
+  url: /en/privacy-policy
 
 # Privacy notice
 hosting_third_party: github
@@ -97,6 +103,8 @@ sass:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://apehex.github.io/jekyll-theme-ethereal" # the base hostname & protocol for your site, e.g. http://example.com
 author: HTML5 Up
-copyright_holder: Untitled
+copyright:
+  holder: Untitled
+  license: CC0
 
 # Exclude from processing

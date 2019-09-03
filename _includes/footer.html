@@ -1,14 +1,14 @@
 <!-- Footer -->
 <footer id="footer">
     <ul class="copyright">
-        <li>&copy; {{ site.copyright_holder }}</li>
+        <li>&copy; {{ site.copyright.holder }} - {{ site.copyright.license }}</li>
         <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
         <li>Jekyll integration: <a href="http://github.com/apehex" target="_blank">apehex</a></li>
-        {% if site.legal_terms_url %}
-        <li><a href="{{ site.legal_terms_url | absolute_url }}" target="_blank">Legal Terms</a></li>
+        {% if site.legal_terms.url %}
+        <li><a href="{{ site.legal_terms.url | absolute_url }}" target="_blank">Legal Terms</a></li>
         {% endif %}
-        {% if site.privacy_policy_url %}
-        <li><a href="{{ site.privacy_policy_url | absolute_url }}" target="_blank">Privacy Policy</a></li>
+        {% if site.privacy_policy.url %}
+        <li><a href="{{ site.privacy_policy.url | absolute_url }}" target="_blank">Privacy Policy</a></li>
         {% endif %}
     </ul>
 </footer>
