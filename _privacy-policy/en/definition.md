@@ -4,7 +4,7 @@ panel-id: definition
 type: generic
 header:
     title: Personal Data
-    description: What are they?
+    description:
 style:
     size: medium
     text:
