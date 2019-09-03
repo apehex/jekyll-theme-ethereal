@@ -65,6 +65,8 @@ collections:
     output: false
   home:
     output: false
+  privacy-policy:
+    output: false
   redirects:
     output: true
     permalink: /:path/
