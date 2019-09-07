@@ -1,6 +1,5 @@
 # Site settings
 title: Ethereal
-subtitle: by HTML5 Up
 description: >- # this means to ignore newlines until "baseurl:"
   This is Ethereal, my latest, greatest, and quite possibly most unique template for HTML5 UP.
   Since releasing Parallelism 3-4 years ago (!!!), I've been dying to do another side-scrolling
@@ -45,19 +44,14 @@ twitter:
   label: "@untitled-tld"
 
 # Optional elements
-logo:
-  url: /assets/images/logo.svg
-  alt: logo
-favicon:
-  url: /assets/images/favicon.ico
-  alt: favicon
+logo: /assets/images/logo.png
+favicon: /assets/images/favicon.ico
 legal_terms:
-  url: /en/legal-terms
+  url: /en/legal-terms/
 privacy_policy:
-  url: /en/privacy-policy
-
-# Privacy notice
-hosting_third_party: github
+  url: /en/privacy-policy/
+  third_party:
+    hosting: github
 
 # Collections
 collections:
