@@ -31,7 +31,7 @@
 
 		&.color3 {
 			@include gradient-background;
-			background-color: _palette(accent3);
+			background-color: desaturate(darken(_palette(accent3), 9), 9);
 		}
 
 		&.color4 {
@@ -51,7 +51,7 @@
 
 		&.color3-alt {
 			@include gradient-background(false, $opacity);
-			background-color: desaturate(darken(_palette(accent3), $darken), $desaturate);
+			background-color: desaturate(darken(_palette(accent3), 12), 12);
 		}
 
 		&.color4-alt {
