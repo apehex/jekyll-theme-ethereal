@@ -1,13 +1,7 @@
 ---
-layout: default
+layout: collection
 lang-ref: home-page
+collection: home
 title: "Jekyll Theme Ethereal"
 subtitle: "A Horizontal Site Template"
 ---
-
-{% assign panels = site.home | sort: 'index' %}
-
-{% for item in panels %}
-{% assign content = item.content %}
-{% include panel.html type=item.type id=item.panel-id header=item.header style=item.style content=content %}
-{% endfor %}

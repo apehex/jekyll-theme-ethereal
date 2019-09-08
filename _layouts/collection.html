@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+{% assign collection = site.collections | where: "label", page.collection %}
+
+{% assign panels = collection.first.docs | sort: 'index' %}
+
+{% for item in panels %}
+{% assign content = item.content %}
+{% include panel.html type=item.type id=item.panel-id header=item.header style=item.style content=content %}
+{% endfor %}
