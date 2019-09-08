@@ -7,6 +7,10 @@ layout: default
 {% assign panels = collection.first.docs | sort: 'index' %}
 
 {% for item in panels %}
-{% assign content = item.content %}
-{% include panel.html type=item.type id=item.panel-id header=item.header style=item.style content=content %}
+    {% assign content = item.content %}
+    {% if item.type=="banner" or item.type=="contact" or item.type=="generic" or item.type=="spotlight" %}
+        {% include panel.html type=item.type id=item.panel-id header=item.header style=item.style content=content %}
+    {% else %}
+        {{ content }}
+    {% endif %}
 {% endfor %}
