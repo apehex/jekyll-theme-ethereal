@@ -2,8 +2,8 @@
 layout: default
 ---
 
-{%- assign collection = site.collections | where: "label", page.collection | first %}
-{%- assign panels = collection.docs | where: "lang", page.lang | where: "lang-ref", page.lang-ref | sort: 'index' %}
+{%- assign collection = site.collections | where: "label", page.collection | first %}
+{%- assign panels = collection.docs | where: "lang", page.lang | where: "lang-ref", page.lang-ref | sort: 'index' %}
 
 {%- for item in panels %}
     {%- if item.type=="banner" or item.type=="contact" or item.type=="generic" or item.type=="spotlight" %}
