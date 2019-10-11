@@ -1,4 +1,5 @@
 ---
+lang: en
 index: 2
 panel-id: second
 type: generic

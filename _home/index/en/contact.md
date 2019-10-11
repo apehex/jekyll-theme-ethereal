@@ -1,4 +1,5 @@
 ---
+lang: en
 index: 5
 panel-id: contact
 type: contact

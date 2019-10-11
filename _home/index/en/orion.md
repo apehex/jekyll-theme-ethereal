@@ -1,4 +1,5 @@
 ---
+lang: en
 index: 1
 panel-id: first
 type: spotlight
