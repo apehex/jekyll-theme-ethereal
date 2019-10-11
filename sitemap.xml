@@ -50,6 +50,19 @@
   
   
   <url>
+    <loc>https://apehex.github.io/jekyll-theme-ethereal/en/test/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-ethereal/en/test/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-ethereal/fr/test/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+  
+  
+  <url>
     <loc>https://apehex.github.io/jekyll-theme-ethereal/fr/</loc>
     
     <xhtml:link rel="alternate" hreflang="" href="https://apehex.github.io/jekyll-theme-ethereal/" />
@@ -70,6 +83,19 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-ethereal/en/privacy-policy/" />
     
     <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-ethereal/fr/politique-de-confidentialite/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+  
+  
+  <url>
+    <loc>https://apehex.github.io/jekyll-theme-ethereal/fr/test/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-ethereal/en/test/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-ethereal/fr/test/" />
     
     <changefreq>weekly</changefreq>
   </url>
