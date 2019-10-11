@@ -1,5 +1,6 @@
 ---
 lang: en
+lang-ref: home-page
 index: 2
 panel-id: second
 type: generic

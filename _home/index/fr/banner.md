@@ -1,5 +1,6 @@
 ---
 lang: fr
+lang-ref: home-page
 index: 0
 panel-id: "banner"
 type: banner

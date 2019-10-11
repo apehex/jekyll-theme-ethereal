@@ -1,5 +1,6 @@
 ---
 lang: fr
+lang-ref: home-page
 index: 3
 panel-id: third
 type: spotlight

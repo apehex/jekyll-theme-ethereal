@@ -1,5 +1,6 @@
 ---
 lang: en
+lang-ref: home-page
 index: 5
 panel-id: contact
 type: contact
