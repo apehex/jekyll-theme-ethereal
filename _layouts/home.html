@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-{% assign banner = page.banner | default: site.banner %}
-
+{%- assign banner = page.banner | default: site.banner -%}
 {% include panel.html type="banner" id="banner" header=banner.header content=banner.content style=banner.style %}
-
 {{ content }}

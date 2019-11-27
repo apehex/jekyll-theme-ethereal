@@ -1,13 +1,13 @@
 <section
 class="panel {{ include.type }} {{ include.style.size }} {{ include.style.text.position | default: 'right' }} {{ include.style.background.color }}"
 id="{{ include.id | default: include.type }}">
-{% if include.type=="banner" %}
+{%- if include.type=="banner" -%}
 	{% include panel_banner.html header=include.header content=include.content style=include.style %}
-{% elsif include.type=="contact" %}
+{%- elsif include.type=="contact" -%}
 	{% include panel_contact.html header=include.header content=include.content style=include.style %}
-{% elsif include.type=="spotlight" %}
+{%- elsif include.type=="spotlight" -%}
 	{% include panel_spotlight.html header=include.header content=include.content style=include.style %}
-{% else %}
+{%- else -%}
 	{% include panel_generic.html header=include.header content=include.content style=include.style %}
-{% endif %}
+{%- endif -%}
 </section>
