@@ -7,6 +7,8 @@ id="{{ include.id | default: include.type }}">
 	{% include panel_contact.html header=include.header content=include.content style=include.style data=include.data %}
 {%- elsif include.type=="spotlight" -%}
 	{% include panel_spotlight.html header=include.header content=include.content style=include.style data=include.data %}
+{%- elsif include.type=="map" -%}
+	{% include panel_map.html header=include.header content=include.content style=include.style data=include.data %}
 {%- else -%}
 	{% include panel_generic.html header=include.header content=include.content style=include.style data=include.data %}
 {%- endif -%}
