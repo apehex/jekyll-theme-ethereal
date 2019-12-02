@@ -92,6 +92,8 @@ permalink: pretty
 markdown: kramdown
 sass:
   style: compressed
+plugins:
+  - jekyll-seo-tag
 
 # Publication settings
 baseurl: "" # the subpath of your site, e.g. /blog
