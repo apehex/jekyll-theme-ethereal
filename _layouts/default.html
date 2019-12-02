@@ -4,7 +4,8 @@
 {%- assign title = page.title | default: site.title -%}
 {%- assign subtitle = page.subtitle | default: site.subtitle -%}
 {%- assign description = page.description | default: site.description -%}
-
+{%- assign stylesheets = page.stylesheets | default: site.stylesheets -%}
+{%- assign scripts = page.scripts | default: site.scripts -%}
 <!DOCTYPE html>
 <!--
     Ethereal by HTML5 UP
@@ -15,7 +16,7 @@
 -->
 <html lang="{{ lang }}">
     
-    {% include head.html title=title subtitle=subtitle description=description %}
+    {% include head.html title=title subtitle=subtitle description=description stylesheets=stylesheets %}
 
     <body class="is-preload">
 
@@ -35,7 +36,7 @@
 
         </div>
 
-        {% include scripts.html %}
+        {% include scripts.html scripts=scripts %}
 
     </body>
 </html>

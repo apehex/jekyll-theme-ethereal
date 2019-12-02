@@ -24,3 +24,8 @@ SimpleJekyllSearch({
   json: "{{ '/index.json' | absolute_url }}"
 })
 </script>
+{%- if include.scripts -%}
+{%- for file in include.scripts -%}
+<script src="{{ file.url | absolute_url }}" /></script>
+{%- endfor -%}
+{%- endif -%}
