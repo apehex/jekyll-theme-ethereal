@@ -30,7 +30,7 @@ var map = new mapboxgl.Map({
     zoom: {{ include.data.zoom | default: 1 }}
 });
 
-var data_points = {% include space_launch_calendar.json %}
+var data_points = {{ include.content | strip_html }}
  
 map.on('load', function () {
 
