@@ -1,8 +1,8 @@
 ---
-lang: en
-lang-ref: home-page
-index: 7
-panel-id: launches
+lang: fr
+lang-ref: homespace-page
+index: 1
+panel-id: map
 type: map
 header:
     title: Map(box)
