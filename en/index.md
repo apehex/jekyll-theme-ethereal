@@ -1,6 +1,6 @@
 ---
 layout: collection
-collection: home
+collection: panels
 lang-ref: home-page
 title: "Jekyll Theme Ethereal"
 subtitle: "A Horizontal Site Template"

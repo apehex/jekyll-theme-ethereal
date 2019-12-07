@@ -1,6 +1,6 @@
 ---
 layout: collection
-collection: home
+collection: panels
 lang-ref: home-page
 title: "Thème Jekyll Ethereal"
 subtitle: "Un Patron de Site Horizontal"

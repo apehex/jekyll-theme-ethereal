@@ -1,7 +1,7 @@
 ---
 layout: collection
 lang-ref: privacy-policy-page
-collection: privacy-policy
+collection: panels
 title: "Jekyll Theme Ethereal"
 subtitle: "Privacy Policy"
 description: >-

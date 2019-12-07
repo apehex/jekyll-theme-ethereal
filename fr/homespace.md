@@ -1,6 +1,6 @@
 ---
 layout: collection
-collection: home
+collection: panels
 lang-ref: homespace-page
 title: "Page Homespace"
 subtitle: "Prochains Lancements"

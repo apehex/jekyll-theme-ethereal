@@ -55,7 +55,7 @@ privacy_policy:
 
 # Collections
 collections:
-  home:
+  panels:
     output: false
   privacy-policy:
     output: false
