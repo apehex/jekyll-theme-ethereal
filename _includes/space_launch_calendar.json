@@ -1,1328 +1,155 @@
 {
-  "launches": [
+  "type": "FeatureCollection",
+  "features": [
     {
       "id": 1670,
-      "name": "Long March 3B | Zhongxing 2D (Chinasat 2D)",
-      "windowstart": "January 10, 2019 17:11:04 UTC",
-      "windowend": "January 10, 2019 17:11:04 UTC",
-      "net": "January 10, 2019 17:11:04 UTC",
-      "wsstamp": 1547140264,
-      "westamp": 1547140264,
-      "netstamp": 1547140264,
-      "isostart": "20190110T171104Z",
-      "isoend": "20190110T171104Z",
-      "isonet": "20190110T171104Z",
-      "status": 3,
-      "inhold": 0,
-      "tbdtime": 0,
-      "vidURLs": [
-        "https://www.youtube.com/watch?v=syQLQTLc_hM",
-        "https://www.youtube.com/watch?v=mXYyHbSe2Jc",
-        "https://www.youtube.com/watch?v=Hvsqu_o8SyU"
-      ],
-      "vidURL": null,
-      "infoURLs": [],
-      "infoURL": null,
-      "holdreason": null,
-      "failreason": null,
-      "tbddate": 0,
-      "probability": -1,
-      "hashtag": null,
-      "changed": "2019-01-10 18:36:14",
-      "location": {
-        "pads": [
-          {
-            "id": 142,
-            "name": "Launch Complex 2 (LC-2), Xichang Satellite Launch Center",
-            "infoURL": null,
-            "wikiURL": "https://en.wikipedia.org/wiki/Xichang_Satellite_Launch_Center",
-            "mapURL": "https://www.google.com/maps/?q=28.246017,102.026556",
-            "latitude": 28.246017,
-            "longitude": 102.026556,
-            "agencies": []
-          }
-        ],
-        "id": 25,
-        "name": "Xichang Satellite Launch Center, People's Republic of China",
-        "infoURL": "",
-        "wikiURL": "",
-        "countryCode": "CHN"
+      "type": "Feature",
+      "properties": {
+        "name": "Long March 3B | Zhongxing 2D (Chinasat 2D)",
+        "windowstart": "January 10, 2019 17:11:04 UTC",
       },
-      "rocket": {
-        "id": 22,
-        "name": "Long March 3B",
-        "configuration": "B",
-        "familyname": "Long March 3",
-        "agencies": [
-          {
-            "id": 88,
-            "name": "China Aerospace Science and Technology Corporation",
-            "abbrev": "CASC",
-            "countryCode": "CHN",
-            "type": 1,
-            "infoURL": null,
-            "wikiURL": "https://en.wikipedia.org/wiki/China_Aerospace_Science_and_Technology_Corporation",
-            "changed": "2017-02-21 00:00:00",
-            "infoURLs": [
-              "http://english.spacechina.com/",
-              "http://www.cast.cn/item/list.asp?id=1561"
-            ]
-          }
-        ],
-        "wikiURL": "http://en.wikipedia.org/wiki/Long_March_3B",
-        "infoURLs": [],
-        "imageURL": "https://s3.amazonaws.com/launchlibrary/RocketImages/placeholder_1920.png",
-        "imageSizes": [
-          320,
-          480,
-          640,
-          720,
-          768,
-          800,
-          960,
-          1024,
-          1080,
-          1280,
-          1440,
-          1920
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.246017,
+          102.026556
         ]
       },
-      "missions": [
-        {
-          "id": 1171,
-          "name": "Zhongxing 2D (Chinasat 2D)",
-          "description": "Chinasat 2D is a geostationary communications satellite.",
-          "type": 10,
-          "wikiURL": "",
-          "typeName": "Communications",
-          "agencies": [
-            {
-              "id": 88,
-              "name": "China Aerospace Science and Technology Corporation",
-              "abbrev": "CASC",
-              "countryCode": "CHN",
-              "type": 1,
-              "infoURL": null,
-              "wikiURL": "https://en.wikipedia.org/wiki/China_Aerospace_Science_and_Technology_Corporation",
-              "changed": "2017-02-21 00:00:00",
-              "infoURLs": [
-                "http://english.spacechina.com/",
-                "http://www.cast.cn/item/list.asp?id=1561"
-              ]
-            }
-          ],
-          "payloads": []
-        }
-      ],
-      "lsp": {
-        "id": 88,
-        "name": "China Aerospace Science and Technology Corporation",
-        "abbrev": "CASC",
-        "countryCode": "CHN",
-        "type": 1,
-        "infoURL": null,
-        "wikiURL": "https://en.wikipedia.org/wiki/China_Aerospace_Science_and_Technology_Corporation",
-        "changed": "2017-02-21 00:00:00",
-        "infoURLs": [
-          "http://english.spacechina.com/",
-          "http://www.cast.cn/item/list.asp?id=1561"
-        ]
-      }
     },
     {
       "id": 1276,
-      "name": "Falcon 9 Block 5 | Iridium-8",
-      "windowstart": "January 11, 2019 15:31:33 UTC",
-      "windowend": "January 11, 2019 15:31:33 UTC",
-      "net": "January 11, 2019 15:31:33 UTC",
-      "wsstamp": 1547220693,
-      "westamp": 1547220693,
-      "netstamp": 1547220693,
-      "isostart": "20190111T153133Z",
-      "isoend": "20190111T153133Z",
-      "isonet": "20190111T153133Z",
-      "status": 3,
-      "inhold": 0,
-      "tbdtime": 0,
-      "vidURLs": [
-        "https://www.youtube.com/watch?v=VshdafZvwrg"
-      ],
-      "vidURL": null,
-      "infoURLs": [
-        "https://www.spacex.com/sites/spacex/files/iridium8presskit.pdf"
-      ],
-      "infoURL": null,
-      "holdreason": null,
-      "failreason": null,
-      "tbddate": 0,
-      "probability": 60,
-      "hashtag": "#Iridium8",
-      "changed": "2019-01-11 16:54:24",
-      "location": {
-        "pads": [
-          {
-            "id": 100,
-            "name": "Space Launch Complex 4E, Vandenberg AFB, CA",
-            "infoURL": "",
-            "wikiURL": "",
-            "mapURL": "http://maps.google.com/maps?q=34.632+N,+120.611+W",
-            "latitude": 34.632,
-            "longitude": -120.611,
-            "agencies": []
-          }
-        ],
-        "id": 18,
-        "name": "Vandenberg AFB, CA, USA",
-        "infoURL": "",
-        "wikiURL": "",
-        "countryCode": "USA"
+      "type": "Feature",
+      "properties": {
+        "name": "Falcon 9 Block 5 | Iridium-8",
+        "windowstart": "January 11, 2019 15:31:33 UTC",
       },
-      "rocket": {
-        "id": 188,
-        "name": "Falcon 9 Block 5",
-        "configuration": "9 Block 5",
-        "familyname": "Falcon",
-        "agencies": [
-          {
-            "id": 121,
-            "name": "SpaceX",
-            "abbrev": "SpX",
-            "countryCode": "USA",
-            "type": 3,
-            "infoURL": null,
-            "wikiURL": "http://en.wikipedia.org/wiki/SpaceX",
-            "changed": "2017-02-21 00:00:00",
-            "infoURLs": [
-              "http://www.spacex.com/",
-              "https://twitter.com/SpaceX",
-              "https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA"
-            ]
-          }
-        ],
-        "wikiURL": "https://en.wikipedia.org/wiki/Falcon_9_Full_Thrust#Block_5",
-        "infoURLs": [
-          "http://www.spacex.com/falcon9"
-        ],
-        "infoURL": "http://www.spacex.com/falcon9",
-        "imageSizes": [
-          320,
-          480,
-          640,
-          720,
-          768,
-          800,
-          960,
-          1024,
-          1080,
-          1280,
-          1440,
-          1920
-        ],
-        "imageURL": "https://s3.amazonaws.com/launchlibrary/RocketImages/Falcon9Block5.jpg_1920.jpg"
-      },
-      "missions": [
-        {
-          "id": 602,
-          "name": "Iridium-8",
-          "description": "SpaceX's Falcon 9 rocket will deliver 10 satellites to low Earth orbit for Iridium, a global leader in mobile voice and data satellite communications. This is the eighth set of 10 satellites in a series of 75 total satellites that SpaceX will launch for Iridium's next generation global satellite constellation, Iridium NEXT.",
-          "type": 10,
-          "wikiURL": "https://en.wikipedia.org/wiki/Iridium_satellite_constellation#Next-generation_constellation",
-          "typeName": "Communications",
-          "agencies": [
-            {
-              "id": 202,
-              "name": "Iridium Communications",
-              "abbrev": "IRDM",
-              "countryCode": "USA",
-              "type": 3,
-              "infoURL": "",
-              "wikiURL": "https://en.wikipedia.org/wiki/Iridium_Communications",
-              "changed": "2018-03-17 23:49:56",
-              "infoURLs": []
-            }
-          ],
-          "payloads": [
-            {
-              "id": 440,
-              "name": "Iridium-NEXT"
-            }
-          ]
-        }
-      ],
-      "lsp": {
-        "id": 121,
-        "name": "SpaceX",
-        "abbrev": "SpX",
-        "countryCode": "USA",
-        "type": 3,
-        "infoURL": null,
-        "wikiURL": "http://en.wikipedia.org/wiki/SpaceX",
-        "changed": "2017-02-21 00:00:00",
-        "infoURLs": [
-          "http://www.spacex.com/",
-          "https://twitter.com/SpaceX",
-          "https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA"
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.632,
+          -120.611
         ]
-      }
+      },
     },
     {
       "id": 1675,
-      "name": "Simorgh  | Payam",
-      "windowstart": "January 15, 2019 00:30:00 UTC",
-      "windowend": "January 15, 2019 00:30:00 UTC",
-      "net": "January 15, 2019 00:30:00 UTC",
-      "wsstamp": 1547512200,
-      "westamp": 1547512200,
-      "netstamp": 1547512200,
-      "isostart": "20190115T003000Z",
-      "isoend": "20190115T003000Z",
-      "isonet": "20190115T003000Z",
-      "status": 4,
-      "inhold": 0,
-      "tbdtime": 0,
-      "vidURLs": [
-        "https://www.youtube.com/watch?v=0pgscPvI39A",
-        "https://www.youtube.com/watch?v=hSaLQOU9jT0"
-      ],
-      "vidURL": null,
-      "infoURLs": [],
-      "infoURL": null,
-      "holdreason": null,
-      "failreason": "Issue with the third stage during flight, satellite didn't reach orbit.",
-      "tbddate": 0,
-      "probability": -1,
-      "hashtag": null,
-      "changed": "2019-01-15 15:19:26",
-      "location": {
-        "pads": [
-          {
-            "id": 182,
-            "name": "Imam Khomeini Spaceport",
-            "infoURL": null,
-            "wikiURL": "https://en.wikipedia.org/wiki/Imam_Khomeini_Spaceport",
-            "mapURL": "https://www.google.com/maps?q=35.238000,53.950778",
-            "latitude": 35.238,
-            "longitude": 53.950778,
-            "agencies": [
-              {
-                "id": 34,
-                "name": "Iranian Space Agency",
-                "abbrev": "ISA",
-                "countryCode": "IRN",
-                "type": 1,
-                "infoURL": "http://www.isa.ir/",
-                "wikiURL": "http://en.wikipedia.org/wiki/Iranian_Space_Agency",
-                "changed": "2017-02-21 00:00:00",
-                "infoURLs": [
-                  "http://www.isa.ir/"
-                ]
-              }
-            ]
-          }
-        ],
-        "id": 6,
-        "name": "Semnan Space Center, Islamic Republic of Iran",
-        "infoURL": "",
-        "wikiURL": "",
-        "countryCode": "IRN"
+      "type": "Feature",
+      "properties": {
+        "name": "Simorgh  | Payam",
+        "windowstart": "January 15, 2019 00:30:00 UTC",
       },
-      "rocket": {
-        "id": 185,
-        "name": "Simorgh ",
-        "configuration": "",
-        "familyname": "Simorgh",
-        "agencies": null,
-        "wikiURL": "https://en.wikipedia.org/wiki/Simorgh_(rocket)",
-        "infoURLs": [],
-        "imageURL": "https://s3.amazonaws.com/launchlibrary/RocketImages/placeholder_1920.png",
-        "imageSizes": [
-          320,
-          480,
-          640,
-          720,
-          768,
-          800,
-          960,
-          1024,
-          1080,
-          1280,
-          1440,
-          1920
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.238,
+          53.950778
         ]
       },
-      "missions": [
-        {
-          "id": 1173,
-          "name": "Payam",
-          "description": "Payam is a civilian remote sensing satellited developed by Amirkabir University of Technology. It was supposed to be used for Earth imaging to assist agriculture and environment management.",
-          "type": 1,
-          "wikiURL": "",
-          "typeName": "Earth Science",
-          "agencies": [
-            {
-              "id": 34,
-              "name": "Iranian Space Agency",
-              "abbrev": "ISA",
-              "countryCode": "IRN",
-              "type": 1,
-              "infoURL": "http://www.isa.ir/",
-              "wikiURL": "http://en.wikipedia.org/wiki/Iranian_Space_Agency",
-              "changed": "2017-02-21 00:00:00",
-              "infoURLs": [
-                "http://www.isa.ir/"
-              ]
-            }
-          ],
-          "payloads": [
-            {
-              "id": 390,
-              "name": "Payam"
-            }
-          ]
-        }
-      ],
-      "lsp": {
-        "id": 34,
-        "name": "Iranian Space Agency",
-        "abbrev": "ISA",
-        "countryCode": "IRN",
-        "type": 1,
-        "infoURL": "http://www.isa.ir/",
-        "wikiURL": "http://en.wikipedia.org/wiki/Iranian_Space_Agency",
-        "changed": "2017-02-21 00:00:00",
-        "infoURLs": [
-          "http://www.isa.ir/"
-        ]
-      }
     },
     {
       "id": 1307,
-      "name": "Epsilon  | RAPIS-1 & others",
-      "windowstart": "January 18, 2019 00:50:20 UTC",
-      "windowend": "January 18, 2019 00:59:37 UTC",
-      "net": "January 18, 2019 00:50:20 UTC",
-      "wsstamp": 1547772620,
-      "westamp": 1547773177,
-      "netstamp": 1547772620,
-      "isostart": "20190118T005020Z",
-      "isoend": "20190118T005937Z",
-      "isonet": "20190118T005020Z",
-      "status": 3,
-      "inhold": 0,
-      "tbdtime": 0,
-      "vidURLs": [
-        "https://www.youtube.com/watch?v=KPWAhaAATWc"
-      ],
-      "vidURL": null,
-      "infoURLs": [],
-      "infoURL": null,
-      "holdreason": null,
-      "failreason": null,
-      "tbddate": 0,
-      "probability": -1,
-      "hashtag": null,
-      "changed": "2019-01-18 06:21:02",
-      "location": {
-        "pads": [
-          {
-            "id": 171,
-            "name": "Mu Center, Uchinoura Space Center, Japan",
-            "infoURL": null,
-            "wikiURL": "https://en.wikipedia.org/wiki/Uchinoura_Space_Center",
-            "mapURL": "https://www.google.com/maps?q=31.251,131.0813",
-            "latitude": 31.251,
-            "longitude": 131.0813,
-            "agencies": [
-              {
-                "id": 37,
-                "name": "Japan Aerospace Exploration Agency",
-                "abbrev": "JAXA",
-                "countryCode": "JPN",
-                "type": 1,
-                "infoURL": null,
-                "wikiURL": "http://en.wikipedia.org/wiki/Japan_Aerospace_Exploration_Agency",
-                "changed": "2017-02-21 00:00:00",
-                "infoURLs": [
-                  "http://www.jaxa.jp/",
-                  "https://www.youtube.com/channel/UCfMIdADo6FQayQCOkLYGhrQ",
-                  "https://twitter.com/JAXA_en",
-                  "https://www.facebook.com/jaxa.en"
-                ]
-              }
-            ]
-          }
-        ],
-        "id": 41,
-        "name": "Uchinoura Space Center, Japan",
-        "infoURL": "",
-        "wikiURL": "",
-        "countryCode": "JPN"
+      "type": "Feature",
+      "properties": {
+        "name": "Epsilon  | RAPIS-1 & others",
+        "windowstart": "January 18, 2019 00:50:20 UTC",
       },
-      "rocket": {
-        "id": 168,
-        "name": "Epsilon ",
-        "configuration": "",
-        "familyname": "Epsilon",
-        "agencies": [
-          {
-            "id": 37,
-            "name": "Japan Aerospace Exploration Agency",
-            "abbrev": "JAXA",
-            "countryCode": "JPN",
-            "type": 1,
-            "infoURL": null,
-            "wikiURL": "http://en.wikipedia.org/wiki/Japan_Aerospace_Exploration_Agency",
-            "changed": "2017-02-21 00:00:00",
-            "infoURLs": [
-              "http://www.jaxa.jp/",
-              "https://www.youtube.com/channel/UCfMIdADo6FQayQCOkLYGhrQ",
-              "https://twitter.com/JAXA_en",
-              "https://www.facebook.com/jaxa.en"
-            ]
-          }
-        ],
-        "wikiURL": "https://en.wikipedia.org/wiki/Epsilon_(rocket)",
-        "infoURLs": [],
-        "imageURL": "https://s3.amazonaws.com/launchlibrary/RocketImages/placeholder_1920.png",
-        "imageSizes": [
-          320,
-          480,
-          640,
-          720,
-          768,
-          800,
-          960,
-          1024,
-          1080,
-          1280,
-          1440,
-          1920
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.251,
+          131.0813
         ]
       },
-      "missions": [
-        {
-          "id": 734,
-          "name": "RAPIS-1 & others",
-          "description": "A rideshare mission to launch experimental microsats and cubesats. Main payload is RAPIS-1 (RAPid Innovative payload demonstration Satellite 1), which will test several new technologies in space.",
-          "type": 14,
-          "wikiURL": "",
-          "typeName": "Dedicated Rideshare",
-          "agencies": [
-            {
-              "id": 37,
-              "name": "Japan Aerospace Exploration Agency",
-              "abbrev": "JAXA",
-              "countryCode": "JPN",
-              "type": 1,
-              "infoURL": null,
-              "wikiURL": "http://en.wikipedia.org/wiki/Japan_Aerospace_Exploration_Agency",
-              "changed": "2017-02-21 00:00:00",
-              "infoURLs": [
-                "http://www.jaxa.jp/",
-                "https://www.youtube.com/channel/UCfMIdADo6FQayQCOkLYGhrQ",
-                "https://twitter.com/JAXA_en",
-                "https://www.facebook.com/jaxa.en"
-              ]
-            }
-          ],
-          "payloads": [
-            {
-              "id": 82,
-              "name": "MicroDragon"
-            },
-            {
-              "id": 384,
-              "name": "RAPIS-1"
-            },
-            {
-              "id": 385,
-              "name": "RISESat (Hodoyoshi 2)"
-            },
-            {
-              "id": 386,
-              "name": "ALE-1"
-            },
-            {
-              "id": 387,
-              "name": "OrigamiSat-1"
-            },
-            {
-              "id": 388,
-              "name": "Aoba VELOX-IV"
-            },
-            {
-              "id": 389,
-              "name": "NEXUS"
-            }
-          ]
-        }
-      ],
-      "lsp": {
-        "id": 37,
-        "name": "Japan Aerospace Exploration Agency",
-        "abbrev": "JAXA",
-        "countryCode": "JPN",
-        "type": 1,
-        "infoURL": null,
-        "wikiURL": "http://en.wikipedia.org/wiki/Japan_Aerospace_Exploration_Agency",
-        "changed": "2017-02-21 00:00:00",
-        "infoURLs": [
-          "http://www.jaxa.jp/",
-          "https://www.youtube.com/channel/UCfMIdADo6FQayQCOkLYGhrQ",
-          "https://twitter.com/JAXA_en",
-          "https://www.facebook.com/jaxa.en"
-        ]
-      }
     },
     {
       "id": 1288,
-      "name": "Delta IV Heavy | NROL-71",
-      "windowstart": "January 19, 2019 19:10:00 UTC",
-      "windowend": "January 19, 2019 19:10:00 UTC",
-      "net": "January 19, 2019 19:10:00 UTC",
-      "wsstamp": 1547925000,
-      "westamp": 1547925000,
-      "netstamp": 1547925000,
-      "isostart": "20190119T191000Z",
-      "isoend": "20190119T191000Z",
-      "isonet": "20190119T191000Z",
-      "status": 3,
-      "inhold": 0,
-      "tbdtime": 0,
-      "vidURLs": [
-        "https://www.youtube.com/watch?v=QlBhV0HgqYA",
-        "https://www.youtube.com/watch?v=DxjaRK2S7fw",
-        "https://www.ulalaunch.com/missions/delta-iv-nrol-71"
-      ],
-      "vidURL": null,
-      "infoURLs": [],
-      "infoURL": null,
-      "holdreason": null,
-      "failreason": null,
-      "tbddate": 0,
-      "probability": 40,
-      "hashtag": "#NROL71",
-      "changed": "2019-01-19 20:50:50",
-      "location": {
-        "pads": [
-          {
-            "id": 91,
-            "name": "Space Launch Complex 6, Vandenberg AFB, CA",
-            "infoURL": "",
-            "wikiURL": "",
-            "mapURL": "http://maps.google.com/maps?q=34.5815+N,+120.6262+W",
-            "latitude": 34.5815,
-            "longitude": -120.6262,
-            "agencies": []
-          }
-        ],
-        "id": 18,
-        "name": "Vandenberg AFB, CA, USA",
-        "infoURL": "",
-        "wikiURL": "",
-        "countryCode": "USA"
+      "type": "Feature",
+      "properties": {
+        "name": "Delta IV Heavy | NROL-71",
+        "windowstart": "January 19, 2019 19:10:00 UTC",
       },
-      "rocket": {
-        "id": 21,
-        "name": "Delta IV Heavy",
-        "configuration": "IV Heavy",
-        "familyname": "Delta",
-        "agencies": [],
-        "wikiURL": "https://en.wikipedia.org/wiki/Delta_IV",
-        "infoURLs": [],
-        "imageSizes": [
-          320,
-          480,
-          640,
-          720,
-          768,
-          800,
-          960,
-          1024,
-          1080,
-          1280,
-          1440,
-          1920
-        ],
-        "imageURL": "https://s3.amazonaws.com/launchlibrary/RocketImages/Delta+IV+Heavy_1920.jpg"
-      },
-      "missions": [
-        {
-          "id": 568,
-          "name": "NROL-71",
-          "description": "Classified payload for the U.S. National Reconnaissance Office.",
-          "type": 7,
-          "wikiURL": "https://en.wikipedia.org/wiki/List_of_NRO_launches",
-          "typeName": "Government/Top Secret",
-          "agencies": [
-            {
-              "id": 181,
-              "name": "National Reconnaissance Office",
-              "abbrev": "NRO",
-              "countryCode": "USA",
-              "type": 1,
-              "infoURL": null,
-              "wikiURL": "https://en.wikipedia.org/wiki/National_Reconnaissance_Office",
-              "changed": "2017-02-21 00:00:00",
-              "infoURLs": [
-                "http://www.nro.gov/",
-                "https://www.facebook.com/NationalReconnaissanceOffice",
-                "https://twitter.com/NatReconOfc",
-                "https://www.youtube.com/c/nationalreconnaissanceoffice"
-              ]
-            }
-          ],
-          "payloads": []
-        }
-      ],
-      "lsp": {
-        "id": 124,
-        "name": "United Launch Alliance",
-        "abbrev": "ULA",
-        "countryCode": "USA",
-        "type": 3,
-        "infoURL": null,
-        "wikiURL": "http://en.wikipedia.org/wiki/United_Launch_Alliance",
-        "changed": "2017-02-21 00:00:00",
-        "infoURLs": [
-          "http://www.ulalaunch.com/",
-          "https://www.youtube.com/channel/UCnrGPRKAg1PgvuSHrRIl3jg",
-          "https://twitter.com/ulalaunch",
-          "https://www.facebook.com/ulalaunch",
-          "https://www.instagram.com/ulalaunch/"
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.5815,
+          -120.6262
         ]
-      }
+      },
     },
     {
       "id": 1669,
-      "name": "Long March 11 | Jilin-1 Hyperspectral 01, 02, Xiaoxiang-1-03, Lingque-1A",
-      "windowstart": "January 21, 2019 05:38:00 UTC",
-      "windowend": "January 21, 2019 05:55:00 UTC",
-      "net": "January 21, 2019 05:42:20 UTC",
-      "wsstamp": 1548049080,
-      "westamp": 1548050100,
-      "netstamp": 1548049340,
-      "isostart": "20190121T053800Z",
-      "isoend": "20190121T055500Z",
-      "isonet": "20190121T054220Z",
-      "status": 3,
-      "inhold": 0,
-      "tbdtime": 0,
-      "vidURLs": [
-        "https://www.youtube.com/watch?v=9vNxNT-fELE",
-        "https://www.youtube.com/watch?v=vZwL5G6ehoQ",
-        "https://www.weibo.com/tv/v/HcZcyEU02?fid=1034:4330951971409573"
-      ],
-      "vidURL": null,
-      "infoURLs": [],
-      "infoURL": null,
-      "holdreason": null,
-      "failreason": null,
-      "tbddate": 0,
-      "probability": -1,
-      "hashtag": null,
-      "changed": "2019-01-21 06:13:54",
-      "location": {
-        "pads": [
-          {
-            "id": 115,
-            "name": "Unknown Pad, Jiuquan",
-            "infoURL": "",
-            "wikiURL": "",
-            "mapURL": "",
-            "latitude": 40.958,
-            "longitude": 100.291,
-            "agencies": null
-          }
-        ],
-        "id": 1,
-        "name": "Jiuquan, People's Republic of China",
-        "infoURL": "",
-        "wikiURL": "",
-        "countryCode": "CHN"
+      "type": "Feature",
+      "properties": {
+        "name": "Long March 11 | Jilin-1 Hyperspectral 01, 02, Xiaoxiang-1-03, Lingque-1A",
+        "windowstart": "January 21, 2019 05:38:00 UTC",
       },
-      "rocket": {
-        "id": 71,
-        "name": "Long March 11",
-        "configuration": "11",
-        "familyname": "Long March",
-        "agencies": [
-          {
-            "id": 88,
-            "name": "China Aerospace Science and Technology Corporation",
-            "abbrev": "CASC",
-            "countryCode": "CHN",
-            "type": 1,
-            "infoURL": null,
-            "wikiURL": "https://en.wikipedia.org/wiki/China_Aerospace_Science_and_Technology_Corporation",
-            "changed": "2017-02-21 00:00:00",
-            "infoURLs": [
-              "http://english.spacechina.com/",
-              "http://www.cast.cn/item/list.asp?id=1561"
-            ]
-          }
-        ],
-        "wikiURL": "https://en.wikipedia.org/wiki/Long_March_11",
-        "infoURLs": [],
-        "imageURL": "https://s3.amazonaws.com/launchlibrary/RocketImages/placeholder_1920.png",
-        "imageSizes": [
-          320,
-          480,
-          640,
-          720,
-          768,
-          800,
-          960,
-          1024,
-          1080,
-          1280,
-          1440,
-          1920
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.958,
+          100.291
         ]
       },
-      "missions": [
-        {
-          "id": 1168,
-          "name": "Jilin-1 Hyperspectral 01, 02, Xiaoxiang-1-03, Lingque-1A",
-          "description": "Launch carried four remote sensing satellites for Chinese private companies.",
-          "type": 1,
-          "wikiURL": "",
-          "typeName": "Earth Science",
-          "agencies": null,
-          "payloads": [
-            {
-              "id": 393,
-              "name": "Jilin-1 Hyperspectral 01 (Lincao 01)"
-            },
-            {
-              "id": 394,
-              "name": "Jilin Hyperspectral 02 (Wenchang Supercomputer 01)"
-            },
-            {
-              "id": 395,
-              "name": "Xiaoxiang-1-03"
-            },
-            {
-              "id": 396,
-              "name": "Lingque-1A"
-            }
-          ]
-        }
-      ],
-      "lsp": {
-        "id": 88,
-        "name": "China Aerospace Science and Technology Corporation",
-        "abbrev": "CASC",
-        "countryCode": "CHN",
-        "type": 1,
-        "infoURL": null,
-        "wikiURL": "https://en.wikipedia.org/wiki/China_Aerospace_Science_and_Technology_Corporation",
-        "changed": "2017-02-21 00:00:00",
-        "infoURLs": [
-          "http://english.spacechina.com/",
-          "http://www.cast.cn/item/list.asp?id=1561"
-        ]
-      }
     },
     {
       "id": 1614,
-      "name": "PSLV-DL | Microsat-R",
-      "windowstart": "January 24, 2019 17:30:00 UTC",
-      "windowend": "January 24, 2019 21:30:00 UTC",
-      "net": "January 24, 2019 18:07:00 UTC",
-      "wsstamp": 1548351000,
-      "westamp": 1548365400,
-      "netstamp": 1548353220,
-      "isostart": "20190124T173000Z",
-      "isoend": "20190124T213000Z",
-      "isonet": "20190124T180700Z",
-      "status": 3,
-      "inhold": 0,
-      "tbdtime": 0,
-      "vidURLs": [
-        "https://www.youtube.com/watch?v=ipd9c78kQNw",
-        "https://www.isro.gov.in/pslv-c44/pslv-c44-lift-and-onboard-camera-view"
-      ],
-      "vidURL": null,
-      "infoURLs": [
-        "https://www.isro.gov.in/launcher/pslv-c44"
-      ],
-      "infoURL": null,
-      "holdreason": null,
-      "failreason": null,
-      "tbddate": 0,
-      "probability": -1,
-      "hashtag": null,
-      "changed": "2019-01-24 18:34:55",
-      "location": {
-        "pads": [
-          {
-            "id": 144,
-            "name": "Satish Dhawan Space Centre First Launch Pad",
-            "infoURL": "https://en.wikipedia.org/wiki/Satish_Dhawan_Space_Centre_First_Launch_Pad",
-            "wikiURL": "https://en.wikipedia.org/wiki/Satish_Dhawan_Space_Centre_First_Launch_Pad",
-            "mapURL": "https://www.google.com/maps?q=13.733,80.235",
-            "latitude": 13.733,
-            "longitude": 80.235,
-            "agencies": [
-              {
-                "id": 31,
-                "name": "Indian Space Research Organization",
-                "abbrev": "ISRO",
-                "countryCode": "IND",
-                "type": 1,
-                "infoURL": null,
-                "wikiURL": "http://en.wikipedia.org/wiki/Indian_Space_Research_Organization",
-                "changed": "2019-07-14 16:29:44",
-                "infoURLs": [
-                  "https://www.isro.gov.in/",
-                  "https://twitter.com/ISRO",
-                  "https://www.youtube.com/channel/UCw5hEVOTfz_AfzsNFWyNlNg",
-                  "https://www.facebook.com/ISRO"
-                ]
-              }
-            ]
-          }
-        ],
-        "id": 5,
-        "name": "Sriharikota, Republic of India",
-        "infoURL": "",
-        "wikiURL": "",
-        "countryCode": "IND"
+      "type": "Feature",
+      "properties": {
+        "name": "PSLV-DL | Microsat-R",
+        "windowstart": "January 24, 2019 17:30:00 UTC",
       },
-      "rocket": {
-        "id": 215,
-        "name": "PSLV-DL",
-        "configuration": "DL",
-        "familyname": "PSLV",
-        "agencies": [
-          {
-            "id": 31,
-            "name": "Indian Space Research Organization",
-            "abbrev": "ISRO",
-            "countryCode": "IND",
-            "type": 1,
-            "infoURL": null,
-            "wikiURL": "http://en.wikipedia.org/wiki/Indian_Space_Research_Organization",
-            "changed": "2019-07-14 16:29:44",
-            "infoURLs": [
-              "https://www.isro.gov.in/",
-              "https://twitter.com/ISRO",
-              "https://www.youtube.com/channel/UCw5hEVOTfz_AfzsNFWyNlNg",
-              "https://www.facebook.com/ISRO"
-            ]
-          }
-        ],
-        "wikiURL": "https://en.wikipedia.org/wiki/Polar_Satellite_Launch_Vehicle",
-        "infoURLs": [
-          "http://www.isro.gov.in/launchers/pslv"
-        ],
-        "infoURL": "http://www.isro.gov.in/launchers/pslv",
-        "imageURL": "https://s3.amazonaws.com/launchlibrary/RocketImages/placeholder_1920.png",
-        "imageSizes": [
-          320,
-          480,
-          640,
-          720,
-          768,
-          800,
-          960,
-          1024,
-          1080,
-          1280,
-          1440,
-          1920
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.733,
+          80.235
         ]
       },
-      "missions": [
-        {
-          "id": 1174,
-          "name": "Microsat-R",
-          "description": "Microsat-R is a remote sensing satellite . This launch will also test the use of the fourth stage (PS4) as an orbital platform for carrying out experiments. It will carry a student payload Kalamsat.",
-          "type": 1,
-          "wikiURL": "",
-          "typeName": "Earth Science",
-          "agencies": [],
-          "payloads": [
-            {
-              "id": 391,
-              "name": "Microsat-R"
-            },
-            {
-              "id": 398,
-              "name": "Kalamsat-V2"
-            }
-          ]
-        }
-      ],
-      "lsp": {
-        "id": 31,
-        "name": "Indian Space Research Organization",
-        "abbrev": "ISRO",
-        "countryCode": "IND",
-        "type": 1,
-        "infoURL": null,
-        "wikiURL": "http://en.wikipedia.org/wiki/Indian_Space_Research_Organization",
-        "changed": "2019-07-14 16:29:44",
-        "infoURLs": [
-          "https://www.isro.gov.in/",
-          "https://twitter.com/ISRO",
-          "https://www.youtube.com/channel/UCw5hEVOTfz_AfzsNFWyNlNg",
-          "https://www.facebook.com/ISRO"
-        ]
-      }
     },
     {
       "id": 1678,
-      "name": "Safir 1B | Doosti",
-      "windowstart": "February 5, 2019 00:00:00 UTC",
-      "windowend": "February 5, 2019 00:00:00 UTC",
-      "net": "February 5, 2019 00:00:00 UTC",
-      "wsstamp": 1549324800,
-      "westamp": 1549324800,
-      "netstamp": 1549324800,
-      "isostart": "20190205T000000Z",
-      "isoend": "20190205T000000Z",
-      "isonet": "20190205T000000Z",
-      "status": 4,
-      "inhold": 0,
-      "tbdtime": 0,
-      "vidURLs": [],
-      "vidURL": null,
-      "infoURLs": [],
-      "infoURL": null,
-      "holdreason": null,
-      "failreason": null,
-      "tbddate": 0,
-      "probability": -1,
-      "hashtag": null,
-      "changed": "2019-02-06 22:00:46",
-      "location": {
-        "pads": [
-          {
-            "id": 120,
-            "name": "Unknown Pad, Iran",
-            "infoURL": "",
-            "wikiURL": null,
-            "mapURL": null,
-            "latitude": 35.258416,
-            "longitude": 53.953567,
-            "agencies": null
-          }
-        ],
-        "id": 6,
-        "name": "Semnan Space Center, Islamic Republic of Iran",
-        "infoURL": "",
-        "wikiURL": "",
-        "countryCode": "IRN"
+      "type": "Feature",
+      "properties": {
+        "name": "Safir 1B | Doosti",
+        "windowstart": "February 5, 2019 00:00:00 UTC",
       },
-      "rocket": {
-        "id": 101,
-        "name": "Safir 1B",
-        "configuration": "1B",
-        "familyname": "Safir",
-        "agencies": [
-          {
-            "id": 34,
-            "name": "Iranian Space Agency",
-            "abbrev": "ISA",
-            "countryCode": "IRN",
-            "type": 1,
-            "infoURL": "http://www.isa.ir/",
-            "wikiURL": "http://en.wikipedia.org/wiki/Iranian_Space_Agency",
-            "changed": "2017-02-21 00:00:00",
-            "infoURLs": [
-              "http://www.isa.ir/"
-            ]
-          }
-        ],
-        "wikiURL": "https://en.wikipedia.org/wiki/Safir_(rocket)",
-        "infoURLs": [],
-        "imageURL": "https://s3.amazonaws.com/launchlibrary/RocketImages/placeholder_1920.png",
-        "imageSizes": [
-          320,
-          480,
-          640,
-          720,
-          768,
-          800,
-          960,
-          1024,
-          1080,
-          1280,
-          1440,
-          1920
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.258416,
+          53.953567
         ]
       },
-      "missions": [
-        {
-          "id": 1177,
-          "name": "Doosti",
-          "description": "Doosti (farsi for \"friendship\") is a microsatellite developed and built by the Remote Sensing Laboratory of Iranian Space Agency.",
-          "type": 1,
-          "wikiURL": "",
-          "typeName": "Earth Science",
-          "agencies": [
-            {
-              "id": 34,
-              "name": "Iranian Space Agency",
-              "abbrev": "ISA",
-              "countryCode": "IRN",
-              "type": 1,
-              "infoURL": "http://www.isa.ir/",
-              "wikiURL": "http://en.wikipedia.org/wiki/Iranian_Space_Agency",
-              "changed": "2017-02-21 00:00:00",
-              "infoURLs": [
-                "http://www.isa.ir/"
-              ]
-            }
-          ],
-          "payloads": []
-        }
-      ],
-      "lsp": {
-        "id": 34,
-        "name": "Iranian Space Agency",
-        "abbrev": "ISA",
-        "countryCode": "IRN",
-        "type": 1,
-        "infoURL": "http://www.isa.ir/",
-        "wikiURL": "http://en.wikipedia.org/wiki/Iranian_Space_Agency",
-        "changed": "2017-02-21 00:00:00",
-        "infoURLs": [
-          "http://www.isa.ir/"
-        ]
-      }
     },
     {
       "id": 1434,
-      "name": "Ariane 5 ECA | Saudi Geostationary Satellite 1/Hellas Sat 4 & GSAT-31",
-      "windowstart": "February 5, 2019 21:01:00 UTC",
-      "windowend": "February 5, 2019 22:02:00 UTC",
-      "net": "February 5, 2019 21:01:00 UTC",
-      "wsstamp": 1549400460,
-      "westamp": 1549404120,
-      "netstamp": 1549400460,
-      "isostart": "20190205T210100Z",
-      "isoend": "20190205T220200Z",
-      "isonet": "20190205T210100Z",
-      "status": 3,
-      "inhold": 0,
-      "tbdtime": 0,
-      "vidURLs": [
-        "https://www.youtube.com/watch?v=j_Q31Jb2_dM",
-        "https://www.youtube.com/watch?v=YEaZhGIhfzg",
-        "https://www.youtube.com/watch?v=gotxGt_luQ8",
-        "https://www.youtube.com/watch?v=fcYBP1sl7Zo",
-        "http://www.arianespace.com/mission/ariane-flight-va247/"
-      ],
-      "vidURL": null,
-      "infoURLs": [],
-      "infoURL": null,
-      "holdreason": null,
-      "failreason": null,
-      "tbddate": 0,
-      "probability": -1,
-      "hashtag": "",
-      "changed": "2019-02-05 22:49:27",
-      "location": {
-        "pads": [
-          {
-            "id": 137,
-            "name": "Ariane Launch Area 3, Kourou",
-            "infoURL": "http://www.esa.int/Our_Activities/Launchers/Europe_s_Spaceport/Europe_s_Spaceport2",
-            "wikiURL": "http://en.wikipedia.org/wiki/ELA-3",
-            "mapURL": "https://www.google.com/maps/?q=5.239,-52.769",
-            "latitude": 5.239,
-            "longitude": -52.768,
-            "agencies": []
-          }
-        ],
-        "id": 3,
-        "name": "Kourou, French Guiana",
-        "infoURL": "",
-        "wikiURL": "",
-        "countryCode": "GUF"
+      "type": "Feature",
+      "properties": {
+        "name": "Ariane 5 ECA | Saudi Geostationary Satellite 1/Hellas Sat 4 & GSAT-31",
+        "windowstart": "February 5, 2019 21:01:00 UTC",
       },
-      "rocket": {
-        "id": 27,
-        "name": "Ariane 5 ECA",
-        "configuration": "ECA",
-        "familyname": "Ariane",
-        "agencies": [],
-        "wikiURL": "https://en.wikipedia.org/wiki/Ariane_5",
-        "infoURLs": [
-          "http://www.arianespace.com/vehicle/ariane-5/"
-        ],
-        "infoURL": "http://www.arianespace.com/vehicle/ariane-5/",
-        "imageSizes": [
-          320,
-          480,
-          640,
-          720,
-          768,
-          800,
-          960,
-          1024,
-          1080,
-          1280,
-          1440,
-          1920
-        ],
-        "imageURL": "https://s3.amazonaws.com/launchlibrary/RocketImages/Ariane+5+ECA_1920.jpg"
-      },
-      "missions": [
-        {
-          "id": 895,
-          "name": "Saudi Geostationary Satellite 1/Hellas Sat 4 & GSAT-31",
-          "description": "Hellas Sat 4/SaudiGeoSat 1 is a geostationary communications satellite to be used jointly by Hellas Sat and KACST. It will provide advanced telecommunications capabilities, including television, internet, telephone and secure military communications to customers in the Middle East, Africa and Europe. Another passenger of the launch is an Indian communications satellite GSAT-31.",
-          "type": 10,
-          "wikiURL": "",
-          "typeName": "Communications",
-          "agencies": [
-            {
-              "id": 31,
-              "name": "Indian Space Research Organization",
-              "abbrev": "ISRO",
-              "countryCode": "IND",
-              "type": 1,
-              "infoURL": null,
-              "wikiURL": "http://en.wikipedia.org/wiki/Indian_Space_Research_Organization",
-              "changed": "2019-07-14 16:29:44",
-              "infoURLs": [
-                "https://www.isro.gov.in/",
-                "https://twitter.com/ISRO",
-                "https://www.youtube.com/channel/UCw5hEVOTfz_AfzsNFWyNlNg",
-                "https://www.facebook.com/ISRO"
-              ]
-            }
-          ],
-          "payloads": [
-            {
-              "id": 399,
-              "name": "Saudi Geostationary Satellite 1/Hellas Sat 4"
-            },
-            {
-              "id": 400,
-              "name": "GSAT-31"
-            }
-          ]
-        }
-      ],
-      "lsp": {
-        "id": 115,
-        "name": "Arianespace",
-        "abbrev": "ASA",
-        "countryCode": "FRA",
-        "type": 3,
-        "infoURL": null,
-        "wikiURL": "http://en.wikipedia.org/wiki/Arianespace",
-        "changed": "2017-02-21 00:00:00",
-        "infoURLs": [
-          "http://www.arianespace.com",
-          "https://www.youtube.com/channel/UCRn9F2D9j-t4A-HgudM7aLQ",
-          "https://www.facebook.com/ArianeGroup",
-          "https://twitter.com/arianespace",
-          "https://www.instagram.com/arianespace"
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.239,
+          -52.768
         ]
-      }
+      },
     },
     {
       "id": 1594,
-      "name": "Soyuz 2.1b/Fregat-M | EgyptSat-A",
-      "windowstart": "February 21, 2019 16:47:00 UTC",
-      "windowend": "February 21, 2019 16:47:00 UTC",
-      "net": "February 21, 2019 16:47:00 UTC",
-      "wsstamp": 1550767620,
-      "westamp": 1550767620,
-      "netstamp": 1550767620,
-      "isostart": "20190221T164700Z",
-      "isoend": "20190221T164700Z",
-      "isonet": "20190221T164700Z",
-      "status": 3,
-      "inhold": 0,
-      "tbdtime": 0,
-      "vidURLs": [],
-      "vidURL": null,
-      "infoURLs": [],
-      "infoURL": null,
-      "holdreason": null,
-      "failreason": null,
-      "tbddate": 0,
-      "probability": -1,
-      "hashtag": null,
-      "changed": "2019-02-21 18:41:01",
-      "location": {
-        "pads": [
-          {
-            "id": 30,
-            "name": "31/6, Baikonur Cosmodrome, Kazakhstan",
-            "infoURL": "",
-            "wikiURL": "",
-            "mapURL": "http://maps.google.com/maps?q=45.996+N,+63.564+E",
-            "latitude": 45.996034,
-            "longitude": 63.564003,
-            "agencies": []
-          }
-        ],
-        "id": 10,
-        "name": "Baikonur Cosmodrome, Republic of Kazakhstan",
-        "infoURL": "",
-        "wikiURL": "",
-        "countryCode": "KAZ"
+      "type": "Feature",
+      "properties": {
+        "name": "Soyuz 2.1b/Fregat-M | EgyptSat-A",
+        "windowstart": "February 21, 2019 16:47:00 UTC",
       },
-      "rocket": {
-        "id": 153,
-        "name": "Soyuz 2.1b/Fregat-M",
-        "configuration": "2.1b/Fregat-M",
-        "familyname": "Soyuz",
-        "agencies": [],
-        "wikiURL": "https://en.wikipedia.org/wiki/Soyuz-2",
-        "infoURLs": [],
-        "imageURL": "https://s3.amazonaws.com/launchlibrary/RocketImages/placeholder_1920.png",
-        "imageSizes": [
-          320,
-          480,
-          640,
-          720,
-          768,
-          800,
-          960,
-          1024,
-          1080,
-          1280,
-          1440,
-          1920
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.996034,
+          63.564003
         ]
       },
-      "missions": [
-        {
-          "id": 841,
-          "name": "EgyptSat-A",
-          "description": "EgyptSat-A (MisrSat A) is Egypt's third Earth remote-sounding satellite. The satellite is jointly built by Egypt's National Authority for Remote Sensing and Space Sciences together with RKK Energiya in Russia. The imaging payload was developed by OAO Peleng and NIRUP Geoinformatsionnye Sistemy in Belarus.\n\nThe satellite is an improved version of EgyptSat 2 and is also based on RKK Energiya's 559GK bus, which inherits technologies from their USP platform. The satellite features SPD-70 electric engines using Xenon. It features an improved opto-electronic system and onboard control system, high-speed on-board radio link and solar cells with increased efficiency.",
-          "type": 1,
-          "wikiURL": "",
-          "typeName": "Earth Science",
-          "agencies": null,
-          "payloads": []
-        }
-      ],
-      "lsp": {
-        "id": 96,
-        "name": "Khrunichev State Research and Production Space Center",
-        "abbrev": "KhSC",
-        "countryCode": "RUS",
-        "type": 1,
-        "infoURL": "http://www.khrunichev.ru/main.php?lang=en",
-        "wikiURL": "http://en.wikipedia.org/wiki/Khrunichev_State_Research_and_Production_Space_Center",
-        "changed": "2017-02-21 00:00:00",
-        "infoURLs": [
-          "http://www.khrunichev.ru/main.php?lang=en"
-        ]
-      }
     }
-  ],
-  "total": 220,
-  "offset": 0,
-  "count": 10
+  ]
 }
