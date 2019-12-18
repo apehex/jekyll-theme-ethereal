@@ -1,6 +1,6 @@
 <style>
 body { margin: 0; padding: 0; }
-#map { position: relative; top: 0; bottom: 0; width: 100%; };
+#map-container { position: relative; top: 0; bottom: 0; width: 100%; };
  
 #marker {
     background-image: url('..images/rocket.png');
@@ -19,19 +19,19 @@ body { margin: 0; padding: 0; }
     <h2 class="major">{{ include.header.title }}</h2>
     <p>{{ include.header.description }}</p>
 </div>
-<div id='map'></div>
+<div id='map-container'></div>
 <script src="{{ 'assets/js/mapbox-gl.js' | absolute_url }}" /></script>
 <script defer>
 mapboxgl.accessToken = "{{ include.data.token }}";
 var map = new mapboxgl.Map({
-    container: "map",
+    container: "map-container",
     style: "{{ include.data.style }}",
     center: [{{ include.data.center.longitude | default: 0.0 }}, {{ include.data.center.latitude | default: 0.0 }}],
     zoom: {{ include.data.zoom | default: 1 }}
 });
 
-var data_points = {{ include.content | strip_html }}
- 
+var data_points = {{ include.content | strip_html }}
+
 map.on('load', function () {
 
     map.addLayer({
@@ -46,7 +46,7 @@ map.on('load', function () {
             // concatenate the name to get an icon from the style's sprite sheet
             "icon-image": ["concat", ["get", "icon"], "-15"],
             // get the title name from the source's "title" property
-            "text-field": ["get", "title"],
+            "text-field": ["get", "name"],
             "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
             "text-offset": [0, 0.6],
             "text-anchor": "top"
