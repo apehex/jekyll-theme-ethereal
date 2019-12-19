@@ -74,6 +74,12 @@ Social icons will appear for each url your fill in, among `facebook_url` etc.
 ### Contact
 Your contact information can be used in contact forms, the footer or anywhere else.
 
+### Recaptcha
+
+The contact form is validated using [google's recaptcha plugin][recaptcha-documentation].
+First, you need to [sign your website up] to enable the plugin.
+Google will provide you with a **client-side integration key**: copy it to `_config.yml` under `recaptcha.sitekey`.
+
 ## Publication
 
 ### On Github Pages
@@ -545,3 +551,5 @@ The theme is available as open source under the terms of the [CC-BY-4.0](LICENSE
 [cookieconsent]: https://github.com/osano/cookieconsent
 [html5up]: https://html5up.net/
 [jekyll-logo]: https://github.com/jekyll/brand
+[recaptcha-documentation]: https://developers.google.com/recaptcha/intro
+[recaptcha-registering]: https://www.google.com/recaptcha/admin
