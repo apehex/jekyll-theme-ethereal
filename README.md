@@ -22,6 +22,10 @@ You can preview the theme [here](https://apehex.github.io/jekyll-theme-ethereal)
 
 > **SEO ready**: sitemap, robots.txt and tags are automatically generated for the website
 
+> **Light**: svg images, thumbs and lazy loading for raster images, few libraries
+
+> **Hardened**: form validation, recaptcha, verified libraries
+
 # Installation
 
 Add this line to your Jekyll site's `Gemfile`:
@@ -49,6 +53,11 @@ Or install it yourself as:
 For those unfamiliar with how Jekyll works, check out [jekyllrb.com](https://jekyllrb.com/) for all the details, 
 or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/), 
 and [creating pages](https://jekyllrb.com/docs/pages/).
+
+## Initialization
+
+Copy the file `_config.yml` from the theme repository to the root of your website folder tree.
+The following section explains what the settings impact and how to configure `_config.yml` properly.
 
 ## Configuration
 
