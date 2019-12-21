@@ -1,0 +1,10 @@
+<script type="text/javascript">
+    var onloadCallback = function() {
+        grecaptcha.render('recaptcha-checkbox', {
+            'sitekey' : '{{ site.recaptcha.sitekey }}',
+            'theme' : 'dark',
+            'size' : 'compact'
+        });
+    };
+</script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>

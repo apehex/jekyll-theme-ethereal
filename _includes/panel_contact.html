@@ -4,38 +4,10 @@
 </div>
 <div class="inner columns divided">
     <div class="span-3-25">
-        <form method="post" action="#">
-            <div class="fields">
-                <div class="field half">
-                    <label for="name">Name</label>
-                    <input type="text" name="contact-name" id="contact-name" required minlength="4" maxlength="64" />
-                </div>
-                <div class="field half">
-                    <label for="email">Email</label>
-                    <input type="email" name="contact-email" id="contact-email" required minlength="8" maxlength="64" />
-                </div>
-                <div class="field">
-                    <label for="message">Message</label>
-                    <textarea name="contact-message" id="contact-message" rows="4"vrequired minlength="16" maxlength="256" ></textarea>
-                </div>
-            </div>
-            <ul class="actions">
-                <li><div id="recaptcha-checkbox" ></div></li>
-                <li><input type="submit" id="contact-submit-button" value="Send Message" class="button primary fa-envelope" /></li>
-                <li><input type="reset" id="contact-reset-button" value="Reset" class="icon button fa-undo" /></li>
-            </ul>
-        </form>
+        {% include contact_form.html %}
     </div>
     <div class="span-1-5">
         {% include social.html color=include.style.icons.color %}
     </div>
 </div>
-<script type="text/javascript">
-    var onloadCallback = function() {
-        grecaptcha.render('recaptcha-checkbox', {
-            'sitekey' : '{{ site.recaptcha.sitekey }}',
-            'theme' : 'dark'
-        });
-    };
-</script>
-<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+{% include contact_script.html %}
