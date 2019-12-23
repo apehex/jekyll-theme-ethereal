@@ -7,6 +7,13 @@
       "date"           : ""
     } ,{
       "lang"           : "en",
+      "title"          : "Homespace Page",
+      "description"    : "This page displays the calendar of upcoming space launches as a map.The data is coming from the website launch library and formated as (geo)json.",
+      "url"            : "https://apehex.github.io/jekyll-theme-ethereal/en/homespace/",
+      "tags"           : "",
+      "date"           : ""
+    } ,{
+      "lang"           : "en",
       "title"          : "Jekyll Theme Ethereal",
       "description"    : "This is Ethereal, my latest, greatest, and quite possibly most unique template for HTML5 UP. Since releasing Parallelism 3-4 years ago (!!!), I&#39;ve been dying to do another side-scrolling template with more in the way of flexibility/customization potential. The result is this template, Ethereal, which combines a robust side-scrolling framework of my own creation (with various &quot;scroll-assist&quot; features like drag/momentum scrolling, keyboard shortcuts, etc.) with a unique look and feel, a lightbox gallery, tons of customization options, and, of course, full responsiveness. Hope you dig it :)",
       "url"            : "https://apehex.github.io/jekyll-theme-ethereal/en/",
@@ -20,10 +27,10 @@
       "tags"           : "",
       "date"           : ""
     } ,{
-      "lang"           : "en",
-      "title"          : "Test Page",
-      "description"    : "This page is generate from a subclass of the &quot;home&quot; panels.This allows to tidy large collections according to the page where the content is displayed.",
-      "url"            : "https://apehex.github.io/jekyll-theme-ethereal/en/test/",
+      "lang"           : "fr",
+      "title"          : "Page Homespace",
+      "description"    : "Vous trouverez sur cette page le calendrier des lancements spaciaux pour 2019-2020.Les données viennent du site launch library et sont au format (geo)json.",
+      "url"            : "https://apehex.github.io/jekyll-theme-ethereal/fr/homespace/",
       "tags"           : "",
       "date"           : ""
     } ,{
@@ -38,13 +45,6 @@
       "title"          : "Thème Jekyll Etheral",
       "description"    : "Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.",
       "url"            : "https://apehex.github.io/jekyll-theme-ethereal/fr/politique-de-confidentialite/",
-      "tags"           : "",
-      "date"           : ""
-    } ,{
-      "lang"           : "fr",
-      "title"          : "Page de Test",
-      "description"    : "Cette page est générée depuis un sous-ensemble de la collection &quot;home&quot;.Cela permet d&#39;organiser les collections volumineuses en fonction de la page sur laquelle le contenu est finalement affiché.",
-      "url"            : "https://apehex.github.io/jekyll-theme-ethereal/fr/test/",
       "tags"           : "",
       "date"           : ""
     } ]
