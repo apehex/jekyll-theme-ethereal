@@ -12,7 +12,20 @@ body { margin: 0; padding: 0; }
 }
  
 .mapboxgl-popup {
-    max-width: 200px;
+    max-width: 240px;
+}
+
+.mapboxgl-popup-close-button {
+  display: none;
+}
+
+.mapboxgl-popup-content {
+  color: #000000;
+  max-width: 220px;
+}
+
+.mapboxgl-popup-content-wrapper {
+  padding: 1%;
 }
 </style>
 <div class="intro {{ include.style.header.joined }} {{ include.style.header.color }}">
