@@ -443,7 +443,8 @@
                         .on('mouseup mousemove mousedown', settings.excludeSelector, function(event) {
 
                             // Prevent event from bubbling.
-                                event.stopPropagation();
+                                // event.preventDefault();
+                                // event.stopPropagation();
 
                             // End drag.
                                 dragging = false;
@@ -455,6 +456,7 @@
                                 $wrapper.triggerHandler('---pauseScrollZone');
 
                         })
+                $body
 
                     // Mousedown event.
                         .on('mousedown', function(event) {
