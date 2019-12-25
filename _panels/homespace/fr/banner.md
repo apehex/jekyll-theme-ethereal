@@ -10,7 +10,7 @@ header:
     description: >-
         Vous trouverez sur cette page le calendrier des lancements spaciaux, pour 2019-2020.
     button:
-        target: "#first"
+        target: "#map"
         label: "Next"
 style:
     text:

@@ -10,7 +10,7 @@ header:
     description: >-
         This page displays the calendar of upcoming space launches, for 2019-2020.
     button:
-        target: "#first"
+        target: "#map"
         label: "Next"
 style:
     text:
