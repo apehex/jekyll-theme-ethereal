@@ -17,7 +17,7 @@ data:
         latitude: 46.0
         longitude: 5.0
 style:
-    size: medium
+    size: large
     background:
         color: color1-alt
     header:
