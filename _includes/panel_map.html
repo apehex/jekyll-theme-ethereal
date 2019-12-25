@@ -30,7 +30,10 @@ var map = new mapboxgl.Map({
     zoom: {{ include.data.zoom | default: 1 }}
 });
 
-var data_points = {{ include.content | strip_html }}
+var data_points;
+fetch("{{ include.data.file | absolute_url }}")
+  .then(response => data_points = response.json())
+  .then(json => data_points = json);
 
 map.on('load', function () {
 
