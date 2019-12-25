@@ -40,7 +40,8 @@ var map = new mapboxgl.Map({
     container: "map-container",
     style: "{{ include.data.style }}",
     center: [{{ include.data.center.longitude | default: 0.0 }}, {{ include.data.center.latitude | default: 0.0 }}],
-    zoom: {{ include.data.zoom | default: 1 }}
+    zoom: {{ include.data.zoom | default: 1 }},
+    dragPan: true
 });
 
 var data_points;
