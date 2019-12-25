@@ -57,12 +57,12 @@ class="panel banner 3 right "
 id="banner"><!-- Banner -->
 <div class="content color0 span-3-75">
     <h1 class="major">Homespace<br />
-    Prochainement</h1>
-    <p>Vous trouverez sur cette page le calendrier des lancements spaciaux pour 2019-2020.<br/><br/>Les données viennent du site <a href="https://launchlibrary.net/">launch library</a> et sont au format (geo)json.</p>
+    </h1>
+    <p>Vous trouverez sur cette page le calendrier des lancements spaciaux, pour 2019-2020.</p>
     <ul class="actions">
         <li>
             <a
-            href="#first"
+            href="#map"
             class="button primary color1 circle icon solid fa-angle-right">
                 Next
             </a>
@@ -76,13 +76,13 @@ data-position="25% 25%">
 </div>
 </section>
 <section
-class="panel map medium right color1-alt"
-id="map"><style>
+class="panel map large right color1-alt"
+id="map"><link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/mapbox-gl.css" />
+<style>
 body { margin: 0; padding: 0; }
 #map-container { position: relative; top: 0; bottom: 0; width: 100%; };
  
 #marker {
-    background-image: url('..images/rocket.png');
     background-size: cover;
     width: 50px;
     height: 50px;
@@ -91,12 +91,25 @@ body { margin: 0; padding: 0; }
 }
  
 .mapboxgl-popup {
-    max-width: 200px;
+    max-width: 240px;
+}
+
+.mapboxgl-popup-close-button {
+  display: none;
+}
+
+.mapboxgl-popup-content {
+  color: #000000;
+  max-width: 220px;
+}
+
+.mapboxgl-popup-content-wrapper {
+  padding: 1%;
 }
 </style>
 <div class="intro  color1">
     <h2 class="major">Map(box)</h2>
-    <p>Duis mauris ex, dapibus sed ligula tempus volutpat magna etiam.</p>
+    <p>Les données viennent du site <a href="https://launchlibrary.net/">launch library</a> et sont au format (geo)json.</p>
 </div>
 <div id='map-container'></div>
 <script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/mapbox-gl.js" /></script>
@@ -106,165 +119,14 @@ var map = new mapboxgl.Map({
     container: "map-container",
     style: "mapbox://styles/apehex/ck2zy2xee00rk1cnowy174a5l",
     center: [5.0, 46.0],
-    zoom: 3
+    zoom: 3,
+    dragPan: true
 });
 
-var data_points = {
-  “type”: “FeatureCollection”,
-  “features”: [
-    {
-      “id”: 1670,
-      “type”: “Feature”,
-      “properties”: {
-        “name”: “Long March 3B | Zhongxing 2D (Chinasat 2D)”,
-        “windowstart”: “January 10, 2019 17:11:04 UTC”,
-      },
-      “geometry”: {
-        “type”: “Point”,
-        “coordinates”: [
-          28.246017,
-          102.026556
-        ]
-      },
-    },
-    {
-      “id”: 1276,
-      “type”: “Feature”,
-      “properties”: {
-        “name”: “Falcon 9 Block 5 | Iridium-8”,
-        “windowstart”: “January 11, 2019 15:31:33 UTC”,
-      },
-      “geometry”: {
-        “type”: “Point”,
-        “coordinates”: [
-          34.632,
-          -120.611
-        ]
-      },
-    },
-    {
-      “id”: 1675,
-      “type”: “Feature”,
-      “properties”: {
-        “name”: “Simorgh  | Payam”,
-        “windowstart”: “January 15, 2019 00:30:00 UTC”,
-      },
-      “geometry”: {
-        “type”: “Point”,
-        “coordinates”: [
-          35.238,
-          53.950778
-        ]
-      },
-    },
-    {
-      “id”: 1307,
-      “type”: “Feature”,
-      “properties”: {
-        “name”: “Epsilon  | RAPIS-1 &amp; others”,
-        “windowstart”: “January 18, 2019 00:50:20 UTC”,
-      },
-      “geometry”: {
-        “type”: “Point”,
-        “coordinates”: [
-          31.251,
-          131.0813
-        ]
-      },
-    },
-    {
-      “id”: 1288,
-      “type”: “Feature”,
-      “properties”: {
-        “name”: “Delta IV Heavy | NROL-71”,
-        “windowstart”: “January 19, 2019 19:10:00 UTC”,
-      },
-      “geometry”: {
-        “type”: “Point”,
-        “coordinates”: [
-          34.5815,
-          -120.6262
-        ]
-      },
-    },
-    {
-      “id”: 1669,
-      “type”: “Feature”,
-      “properties”: {
-        “name”: “Long March 11 | Jilin-1 Hyperspectral 01, 02, Xiaoxiang-1-03, Lingque-1A”,
-        “windowstart”: “January 21, 2019 05:38:00 UTC”,
-      },
-      “geometry”: {
-        “type”: “Point”,
-        “coordinates”: [
-          40.958,
-          100.291
-        ]
-      },
-    },
-    {
-      “id”: 1614,
-      “type”: “Feature”,
-      “properties”: {
-        “name”: “PSLV-DL | Microsat-R”,
-        “windowstart”: “January 24, 2019 17:30:00 UTC”,
-      },
-      “geometry”: {
-        “type”: “Point”,
-        “coordinates”: [
-          13.733,
-          80.235
-        ]
-      },
-    },
-    {
-      “id”: 1678,
-      “type”: “Feature”,
-      “properties”: {
-        “name”: “Safir 1B | Doosti”,
-        “windowstart”: “February 5, 2019 00:00:00 UTC”,
-      },
-      “geometry”: {
-        “type”: “Point”,
-        “coordinates”: [
-          35.258416,
-          53.953567
-        ]
-      },
-    },
-    {
-      “id”: 1434,
-      “type”: “Feature”,
-      “properties”: {
-        “name”: “Ariane 5 ECA | Saudi Geostationary Satellite 1/Hellas Sat 4 &amp; GSAT-31”,
-        “windowstart”: “February 5, 2019 21:01:00 UTC”,
-      },
-      “geometry”: {
-        “type”: “Point”,
-        “coordinates”: [
-          5.239,
-          -52.768
-        ]
-      },
-    },
-    {
-      “id”: 1594,
-      “type”: “Feature”,
-      “properties”: {
-        “name”: “Soyuz 2.1b/Fregat-M | EgyptSat-A”,
-        “windowstart”: “February 21, 2019 16:47:00 UTC”,
-      },
-      “geometry”: {
-        “type”: “Point”,
-        “coordinates”: [
-          45.996034,
-          63.564003
-        ]
-      },
-    }
-  ]
-}
-
+var data_points;
+fetch("https://apehex.github.io/jekyll-theme-ethereal/assets/data/space_launches.json")
+  .then(response => data_points = response.json())
+  .then(json => data_points = json);
 
 map.on('load', function () {
 
@@ -279,14 +141,51 @@ map.on('load', function () {
             // get the icon name from the source's "icon" property
             // concatenate the name to get an icon from the style's sprite sheet
             "icon-image": ["concat", ["get", "icon"], "-15"],
+            "icon-size": 1,
+            "icon-allow-overlap": true,
             // get the title name from the source's "title" property
             "text-field": ["get", "name"],
             "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
             "text-offset": [0, 0.6],
             "text-anchor": "top"
+        },
+        "paint": {
+            "icon-color": "#ffcc00",
+            "icon-halo-color": "#2266AA",
+            "text-color": "#ffffff"
         }
     });
 
+});
+
+
+// When a click event occurs on a feature in the places layer, open a popup at the
+// location of the feature, with description HTML from its properties.
+map.on('click', 'points', function(e) {
+    var coordinates = e.features[0].geometry.coordinates.slice();
+    var description = e.features[0].properties.windowstart;
+     
+    // Ensure that if the map is zoomed out such that multiple
+    // copies of the feature are visible, the popup appears
+    // over the copy being pointed to.
+    while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+    }
+     
+    new mapboxgl.Popup()
+        .setLngLat(coordinates)
+        .setHTML(description)
+        .addTo(map);
+});
+     
+    // Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'points', function() {
+    map.getCanvas().style.cursor = 'pointer';
+});
+     
+    // Change it back to a pointer when it leaves.
+map.on('mouseleave', 'points', function() {
+    map.getCanvas().style.cursor = '';
 });
 </script>
 </section>
