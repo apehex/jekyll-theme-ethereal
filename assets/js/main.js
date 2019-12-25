@@ -57,7 +57,7 @@
                 },
 
             // If set to a valid selector , prevents key/mouse events from bubbling from these elements.
-                excludeSelector: 'input:focus, select:focus, textarea:focus, audio, video, iframe',
+                excludeSelector: 'input:focus, select:focus, textarea:focus, audio, video, iframe, #map-container',
 
             // Link scroll speed.
                 linkScrollSpeed: 1000
@@ -307,6 +307,15 @@
 
                     };
 
+                // Prevent wheeling inside excluded elements from bubbling.
+                    $wrapper.on('wheel', settings.excludeSelector, function(event) {
+
+                        // Stop propagation.
+                            event.preventDefault();
+                            event.stopPropagation();
+
+                    });
+
                 // Wheel event.
                     $body.on('wheel', function(event) {
 
@@ -315,8 +324,8 @@
                                 return;
 
                         // Prevent default.
-                            event.preventDefault();
-                            event.stopPropagation();
+                            // event.preventDefault();
+                            // event.stopPropagation();
 
                         // Stop link scroll.
                             $bodyHtml.stop();
