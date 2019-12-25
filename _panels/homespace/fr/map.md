@@ -16,6 +16,10 @@ data:
     center:
         latitude: 46.0
         longitude: 5.0
+    markers:
+        title: name
+        popup:
+            text: windowstart
 style:
     size: large
     background:

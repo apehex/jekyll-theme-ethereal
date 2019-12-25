@@ -65,7 +65,7 @@ map.on('load', function () {
             "icon-size": 1,
             "icon-allow-overlap": true,
             // get the title name from the source's "title" property
-            "text-field": ["get", "name"],
+            "text-field": ["get", "{{ include.data.markers.title | default: 'name' }}"],
             "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
             "text-offset": [0, 0.6],
             "text-anchor": "top"
@@ -84,7 +84,7 @@ map.on('load', function () {
 // location of the feature, with description HTML from its properties.
 map.on('click', 'points', function(e) {
     var coordinates = e.features[0].geometry.coordinates.slice();
-    var description = e.features[0].properties.windowstart;
+    var description = e.features[0].properties.{{ include.data.markers.popup.text }};
      
     // Ensure that if the map is zoomed out such that multiple
     // copies of the feature are visible, the popup appears
