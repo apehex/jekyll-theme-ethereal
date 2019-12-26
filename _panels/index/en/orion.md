@@ -13,7 +13,7 @@ style:
     text:
         position: right
     background:
-        image: "assets/images/orion_las.jpg"
+        image: "assets/images/fulls/orion_las.jpg"
         position: bottom right
         color: color2
 ---

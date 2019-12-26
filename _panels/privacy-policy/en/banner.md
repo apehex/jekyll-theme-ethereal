@@ -20,6 +20,6 @@ type: raw
         </ul>
     </div>
     <div class="image filtered span-1-75" data-position="25% 25%">
-        <img src="{{ 'assets/images/pillars-of-creation.jpg' | absolute_url }}" alt="" />
+        <img src="{{ 'assets/images/fulls/pillars-of-creation.jpg' | absolute_url }}" alt="" />
     </div>
 </section>
