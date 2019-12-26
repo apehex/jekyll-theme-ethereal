@@ -1,4 +1,6 @@
 ---
+lang: en
+lang-ref: privacy-policy-page
 index: 3
 panel-id: definition
 type: generic

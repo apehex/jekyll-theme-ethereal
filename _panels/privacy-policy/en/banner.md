@@ -1,9 +1,10 @@
 ---
+lang: en
+lang-ref: privacy-policy-page
 index: 0
 panel-id: banner
 type: raw
 ---
-
 <!-- Banner -->
 <section class="panel banner right color0-alt" id="banner">
     <div class="content color0 span-3-75">
