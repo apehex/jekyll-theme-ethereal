@@ -1,9 +1,9 @@
 ---
 layout: collection
-lang-ref: privacy-policy-page
 collection: panels
+lang-ref: privacy-policy-page
 title: "Jekyll Theme Ethereal"
 subtitle: "Privacy Policy"
 description: >-
-    Out privacy policy is quite straight forward, we do not log nor share any personal information about our visitors, period.
+    Our privacy policy is quite straight forward, we do not log nor share any personal information about our visitors, period.
 ---
