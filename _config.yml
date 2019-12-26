@@ -44,8 +44,8 @@ twitter:
   label: "@untitled-tld"
 
 # Optional elements
-logo: /assets/images/logo.png
-favicon: /assets/images/favicon.ico
+logo: assets/images/logo.png
+favicon: assets/images/favicon.ico
 legal_terms:
   url: /en/legal-terms/
 privacy_policy:
