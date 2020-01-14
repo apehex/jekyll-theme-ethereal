@@ -13,7 +13,7 @@ style:
     text:
         position: left
     background:
-        image: "assets/images/fulls/zeta-ophiuchi.jpg"
+        image: "assets/images/fullsize/zeta-ophiuchi.jpg"
         position: bottom right
         color:
 ---

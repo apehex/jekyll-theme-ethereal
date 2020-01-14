@@ -18,6 +18,6 @@ style:
     header:
         color: "color0"
     background:
-        image: "assets/images/fulls/halley-vi.jpg"
+        image: "assets/images/fullsize/halley-vi.jpg"
         color:
 ---

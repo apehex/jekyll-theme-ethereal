@@ -18,6 +18,6 @@ style:
     header:
         color: "color0"
     background:
-        image: "assets/images/fulls/pillars-of-creation.jpg"
+        image: "assets/images/fullsize/pillars-of-creation.jpg"
         color:
 ---
