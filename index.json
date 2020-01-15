@@ -22,7 +22,7 @@
     } ,{
       "lang"           : "en",
       "title"          : "Jekyll Theme Ethereal",
-      "description"    : "Out privacy policy is quite straight forward, we do not log nor share any personal information about our visitors, period.",
+      "description"    : "Our privacy policy is quite straight forward, we do not log nor share any personal information about our visitors, period.",
       "url"            : "https://apehex.github.io/jekyll-theme-ethereal/en/privacy-policy/",
       "tags"           : "",
       "date"           : ""
@@ -42,8 +42,8 @@
       "date"           : ""
     } ,{
       "lang"           : "fr",
-      "title"          : "Thème Jekyll Etheral",
-      "description"    : "Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.",
+      "title"          : "Jekyll Theme Ethereal",
+      "description"    : "Notre politique de confidentialité est très simple, nous n&#39;enregistrons et ne partageons aucune donnée personnelle à propos de nos visiteurs, point final.",
       "url"            : "https://apehex.github.io/jekyll-theme-ethereal/fr/politique-de-confidentialite/",
       "tags"           : "",
       "date"           : ""

@@ -29,7 +29,7 @@
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@HTML5 Up" />
 <script type="application/ld+json">
-{"headline":"Homespace Page","@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://apehex.github.io/jekyll-theme-ethereal/assets/images/logo.png"},"name":"HTML5 Up"},"url":"https://apehex.github.io/jekyll-theme-ethereal/en/homespace/","author":{"@type":"Person","name":"HTML5 Up"},"description":"This page displays the calendar of upcoming space launches as a map.The data is coming from the website launch library and formated as (geo)json.","@context":"https://schema.org"}</script>
+{"@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://apehex.github.io/jekyll-theme-ethereal/assets/images/logo.png"},"name":"HTML5 Up"},"url":"https://apehex.github.io/jekyll-theme-ethereal/en/homespace/","author":{"@type":"Person","name":"HTML5 Up"},"description":"This page displays the calendar of upcoming space launches as a map.The data is coming from the website launch library and formated as (geo)json.","headline":"Homespace Page","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -72,7 +72,7 @@ id="banner"><!-- Banner -->
 <div
 class="image filtered span-1-75"
 data-position="25% 25%">
-    <img src="https://apehex.github.io/jekyll-theme-ethereal/assets/images/halley-vi.jpg" alt="" />
+    <img class="lazy-loading" src="https://apehex.github.io/jekyll-theme-ethereal/assets/images/thumbnail/halley-vi.jpg" data-src="https://apehex.github.io/jekyll-theme-ethereal/assets/images/fullsize/halley-vi.jpg" alt="" />
 </div>
 </section>
 <section
@@ -205,9 +205,10 @@ map.on('mouseleave', 'points', function() {
         </div>
 
         <!-- Scripts -->
-<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/jquery.min.js" type="text/javascript"  type="text/javascript" ></script>
+<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/jquery.min.js" type="text/javascript" ></script>
 <script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/browser.min.js" type="text/javascript" ></script>
 <script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/breakpoints.min.js" type="text/javascript" ></script>
+<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/lazy-loading.js" type="text/javascript" ></script>
 <script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/main.js" type="text/javascript" ></script>
 <script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/cookieconsent.min.js" data-cfasync="false" type="text/javascript" ></script>
 <script>
@@ -221,14 +222,6 @@ window.cookieconsent.initialise({
         }
     }
 });
-</script>
-<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/simple-jekyll-search.min.js" type="text/javascript" ></script>
-<script>
-SimpleJekyllSearch({
-  searchInput: document.getElementById('search-input'),
-  resultsContainer: document.getElementById('search-results'),
-  json: "https://apehex.github.io/jekyll-theme-ethereal/index.json"
-})
 </script>
 
     </body>
