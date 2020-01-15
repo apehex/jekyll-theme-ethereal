@@ -13,7 +13,9 @@ style:
     text:
         position: right
     background:
-        image: "assets/images/fullsize/orion_las.jpg"
+        image:
+            thumbnail: "assets/images/thumbnail/orion_las.jpg"
+            fullsize: "assets/images/fullsize/orion_las.jpg"
         position: bottom right
         color: color2
 ---

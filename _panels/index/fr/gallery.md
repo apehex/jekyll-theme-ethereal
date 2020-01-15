@@ -52,16 +52,16 @@ gallery:
 ---
 <div class="gallery">
     <div class="group span-3">
-        <a href="{{ 'assets/images/fullsize/drone.jpg' | absolute_url }}" class="image filtered span-3" data-position="bottom"><img src="{{ 'assets/images/fullsize/drone.jpg' | absolute_url }}" alt="" /></a>
-        <a href="{{ 'assets/images/fullsize/mars_jezero-crater.jpg' | absolute_url }}" class="image filtered span-1-5" data-position="center"><img src="{{ 'assets/images/fullsize/mars_jezero-crater.jpg' | absolute_url }}" alt="" /></a>
-        <a href="{{ 'assets/images/fullsize/gpim.jpg' | absolute_url }}" class="image filtered span-1-5" data-position="bottom"><img src="{{ 'assets/images/fullsize/gpim.jpg' | absolute_url }}" alt="" /></a>
+        <a href="{{ 'assets/images/fullsize/drone.jpg' | absolute_url }}" class="image filtered span-3" data-position="bottom"><img class="lazy-loading" src="{{ 'assets/images/thumbnail/drone.jpg' | absolute_url }}" data-src="{{ 'assets/images/fullsize/drone.jpg' | absolute_url }}" alt="" /></a>
+        <a href="{{ 'assets/images/fullsize/mars_jezero-crater.jpg' | absolute_url }}" class="image filtered span-1-5" data-position="center"><img class="lazy-loading" src="{{ 'assets/images/thumbnail/mars_jezero-crater.jpg' | absolute_url }}" data-src="{{ 'assets/images/fullsize/mars_jezero-crater.jpg' | absolute_url }}" alt="" /></a>
+        <a href="{{ 'assets/images/fullsize/gpim.jpg' | absolute_url }}" class="image filtered span-1-5" data-position="bottom"><img class="lazy-loading" src="{{ 'assets/images/thumbnail/gpim.jpg' | absolute_url }}" data-src="{{ 'assets/images/fullsize/gpim.jpg' | absolute_url }}" alt="" /></a>
     </div>
-    <a href="{{ 'assets/images/fullsize/saturn_testing.jpg' | absolute_url }}" class="image filtered span-2-5" data-position="top"><img src="{{ 'assets/images/fullsize/saturn_testing.jpg' | absolute_url }}" alt="" /></a>
+    <a href="{{ 'assets/images/fullsize/saturn_testing.jpg' | absolute_url }}" class="image filtered span-2-5" data-position="top"><img class="lazy-loading" src="{{ 'assets/images/thumbnail/saturn_testing.jpg' | absolute_url }}" data-src="{{ 'assets/images/fullsize/saturn_testing.jpg' | absolute_url }}" alt="" /></a>
     <div class="group span-4-5">
-        <a href="{{ 'assets/images/fullsize/hr-9024_cme.jpg' | absolute_url }}" class="image filtered span-3" data-position="center"><img src="{{ 'assets/images/fullsize/hr-9024_cme.jpg' | absolute_url }}" alt="" /></a>
-        <a href="{{ 'assets/images/fullsize/jupiter_abyss.jpg' | absolute_url }}" class="image filtered span-1-5" data-position="center"><img src="{{ 'assets/images/fullsize/jupiter_abyss.jpg' | absolute_url }}" alt="" /></a>
-        <a href="{{ 'assets/images/fullsize/ngc-6543.jpg' | absolute_url }}" class="image filtered span-1-5" data-position="bottom"><img src="{{ 'assets/images/fullsize/ngc-6543.jpg' | absolute_url }}" alt="" /></a>
-        <a href="{{ 'assets/images/fullsize/ngc-3169.jpg' | absolute_url }}" class="image filtered span-3" data-position="top"><img src="{{ 'assets/images/fullsize/ngc-3169.jpg' | absolute_url }}" alt="" /></a>
+        <a href="{{ 'assets/images/fullsize/hr-9024_cme.jpg' | absolute_url }}" class="image filtered span-3" data-position="center"><img class="lazy-loading" src="{{ 'assets/images/thumbnail/hr-9024_cme.jpg' | absolute_url }}" data-src="{{ 'assets/images/fullsize/hr-9024_cme.jpg' | absolute_url }}" alt="" /></a>
+        <a href="{{ 'assets/images/fullsize/jupiter_abyss.jpg' | absolute_url }}" class="image filtered span-1-5" data-position="center"><img class="lazy-loading" src="{{ 'assets/images/thumbnail/jupiter_abyss.jpg' | absolute_url }}" data-src="{{ 'assets/images/fullsize/jupiter_abyss.jpg' | absolute_url }}" alt="" /></a>
+        <a href="{{ 'assets/images/fullsize/ngc-6543.jpg' | absolute_url }}" class="image filtered span-1-5" data-position="bottom"><img class="lazy-loading" src="{{ 'assets/images/thumbnail/ngc-6543.jpg' | absolute_url }}" data-src="{{ 'assets/images/fullsize/ngc-6543.jpg' | absolute_url }}" alt="" /></a>
+        <a href="{{ 'assets/images/fullsize/ngc-3169.jpg' | absolute_url }}" class="image filtered span-3" data-position="top"><img class="lazy-loading" src="{{ 'assets/images/thumbnail/ngc-3169.jpg' | absolute_url }}" data-src="{{ 'assets/images/fullsize/ngc-3169.jpg' | absolute_url }}" alt="" /></a>
     </div>
-    <a href="{{ 'assets/images/fullsize/sls-core_staging.jpg' | absolute_url }}" class="image filtered span-2-5" data-position="right"><img src="{{ 'assets/images/fullsize/sls-core_staging.jpg' | absolute_url }}" alt="" /></a>
+    <a href="{{ 'assets/images/fullsize/sls-core_staging.jpg' | absolute_url }}" class="image filtered span-2-5" data-position="right"><img class="lazy-loading" src="{{ 'assets/images/thumbnail/sls-core_staging.jpg' | absolute_url }}" data-src="{{ 'assets/images/fullsize/sls-core_staging.jpg' | absolute_url }}" alt="" /></a>
 </div>

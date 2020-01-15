@@ -13,7 +13,9 @@ style:
     text:
         position: left
     background:
-        image: "assets/images/fullsize/zeta-ophiuchi.jpg"
+        image:
+            thumbnail: "assets/images/thumbnail/zeta-ophiuchi.jpg"
+            fullsize: "assets/images/fullsize/zeta-ophiuchi.jpg"
         position: bottom right
         color:
 ---

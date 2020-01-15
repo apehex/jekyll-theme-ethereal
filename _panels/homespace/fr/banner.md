@@ -18,6 +18,8 @@ style:
     header:
         color: "color0"
     background:
-        image: "assets/images/fullsize/halley-vi.jpg"
+        image:
+            thumbnail: "assets/images/thumbnail/halley-vi.jpg"
+            fullsize: "assets/images/fullsize/halley-vi.jpg"
         color:
 ---

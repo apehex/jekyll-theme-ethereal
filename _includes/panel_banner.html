@@ -16,5 +16,5 @@
 <div
 class="image filtered span-1-75"
 data-position="{{ include.style.background.position | default: '25% 25%' }}">
-    <img src="{{ include.style.background.image | absolute_url }}" alt="" />
+    <img class="lazy-loading" src="{{ include.style.background.image.thumbnail | absolute_url }}" data-src="{{ include.style.background.image.fullsize | absolute_url }}" alt="" />
 </div>
