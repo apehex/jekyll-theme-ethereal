@@ -19,7 +19,7 @@ style:
         color: "color0"
     background:
         image:
-            placeholder: "assets/images/placeholder/pillars-of-creation.jpg"
-            content: "assets/images/content/pillars-of-creation.jpg"
+            placeholder: "assets/images/placeholder/pillars-of-creation.webp"
+            content: "assets/images/content/pillars-of-creation.webp"
         color:
 ---

@@ -19,7 +19,7 @@ style:
         color: "color0"
     background:
         image:
-            placeholder: "assets/images/placeholder/halley-vi.jpg"
-            content: "assets/images/content/halley-vi.jpg"
+            placeholder: "assets/images/placeholder/halley-vi.webp"
+            content: "assets/images/content/halley-vi.webp"
         color:
 ---

@@ -14,8 +14,8 @@ style:
         position: right
     background:
         image:
-            placeholder: "assets/images/placeholder/orion_las.jpg"
-            content: "assets/images/content/orion_las.jpg"
+            placeholder: "assets/images/placeholder/orion_las.webp"
+            content: "assets/images/content/orion_las.webp"
         position: bottom right
         color: color2
 ---

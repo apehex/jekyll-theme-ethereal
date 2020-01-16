@@ -14,8 +14,8 @@ style:
         position: left
     background:
         image:
-            placeholder: "assets/images/placeholder/zeta-ophiuchi.jpg"
-            content: "assets/images/content/zeta-ophiuchi.jpg"
+            placeholder: "assets/images/placeholder/zeta-ophiuchi.webp"
+            content: "assets/images/content/zeta-ophiuchi.webp"
         position: bottom right
         color:
 ---
