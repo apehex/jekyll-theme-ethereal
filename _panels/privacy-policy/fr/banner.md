@@ -21,6 +21,6 @@ type: raw
         </ul>
     </div>
     <div class="image filtered span-1-75" data-position="25% 25%">
-        <img class="lazy-loading" src="{{ 'assets/images/thumbnail/pillars-of-creation.jpg' | absolute_url }}" data-src="{{ 'assets/images/fullsize/pillars-of-creation.jpg' | absolute_url }}" alt="" />
+        <img class="lazy-loading" src="{{ 'assets/images/placeholder/pillars-of-creation.jpg' | absolute_url }}" data-src="{{ 'assets/images/content/pillars-of-creation.jpg' | absolute_url }}" alt="" />
     </div>
 </section>

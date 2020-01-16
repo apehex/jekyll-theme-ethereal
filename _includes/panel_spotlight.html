@@ -4,5 +4,5 @@
     <p>{{ include.header.description }}</p>
 </div>
 <div class="image filtered tinted" data-position="{{ include.style.background.position }}">
-    <img class="lazy-loading" src="{{ include.style.background.image.thumbnail | absolute_url }}" data-src="{{ include.style.background.image.fullsize | absolute_url }}" alt="{{ include.background.alt }}" />
+    <img class="lazy-loading" src="{{ include.style.background.image.placeholder | absolute_url }}" data-src="{{ include.style.background.image.content | absolute_url }}" alt="{{ include.background.alt }}" />
 </div>
