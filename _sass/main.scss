@@ -1,8 +1,8 @@
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
-@import 'libs/vendor';
-@import 'libs/breakpoints';
+@import 'main/libs/vars';
+@import 'main/libs/functions';
+@import 'main/libs/mixins';
+@import 'main/libs/vendor';
+@import 'main/libs/breakpoints';
 @import 'fontawesome-all.min.css';
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i");
 
@@ -105,31 +105,31 @@
 
 // Base.
 
-	@import 'base/reset';
-	@import 'base/page';
-	@import 'base/typography';
+	@import 'main/base/reset';
+	@import 'main/base/page';
+	@import 'main/base/typography';
 
 // Component.
 
-	@import 'components/cookieconsent';
-	@import 'components/form';
-	@import 'components/icon';
-	@import 'components/image';
-	@import 'components/list';
-	@import 'components/actions';
-	@import 'components/icons';
-	@import 'components/grid-icons';
-	@import 'components/contact-icons';
-	@import 'components/table';
-	@import 'components/button';
-	@import 'components/gallery';
-	@import 'components/panel';
-	@import 'components/panel-banner';
-	@import 'components/panel-spotlight';
+	@import 'main/components/cookieconsent';
+	@import 'main/components/form';
+	@import 'main/components/icon';
+	@import 'main/components/image';
+	@import 'main/components/list';
+	@import 'main/components/actions';
+	@import 'main/components/icons';
+	@import 'main/components/grid-icons';
+	@import 'main/components/contact-icons';
+	@import 'main/components/table';
+	@import 'main/components/button';
+	@import 'main/components/gallery';
+	@import 'main/components/panel';
+	@import 'main/components/panel-banner';
+	@import 'main/components/panel-spotlight';
 
 // Layout.
 
-	@import 'layout/footer';
-	@import 'layout/header';
-	@import 'layout/page-wrapper';
-	@import 'layout/wrapper';
+	@import 'main/layout/footer';
+	@import 'main/layout/header';
+	@import 'main/layout/page-wrapper';
+	@import 'main/layout/wrapper';
