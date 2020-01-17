@@ -33,79 +33,80 @@ body { margin: 0; padding: 0; }
     <p>{{ include.header.description }}</p>
 </div>
 <div id='map-container'></div>
-<script src="{{ 'assets/js/mapbox-gl.js' | absolute_url }}" /></script>
-<script defer>
-mapboxgl.accessToken = "{{ include.data.token }}";
-var map = new mapboxgl.Map({
-    container: "map-container",
-    style: "{{ include.data.style }}",
-    center: [{{ include.data.center.longitude | default: 0.0 }}, {{ include.data.center.latitude | default: 0.0 }}],
-    zoom: {{ include.data.zoom | default: 1 }},
-    dragPan: true
-});
-
+<script>
 var data_points;
 fetch("{{ include.data.file | absolute_url }}")
-  .then(response => data_points = response.json())
-  .then(json => data_points = json);
+    .then(response => data_points = response.json())
+    .then(json => data_points = json);
 
-map.on('load', function () {
-
-    map.addLayer({
-        "id": "points",
-        "type": "symbol",
-        "source": {
-            "type": "geojson",
-            "data": data_points
-        },
-        "layout": {
-            // get the icon name from the source's "icon" property
-            // concatenate the name to get an icon from the style's sprite sheet
-            "icon-image": ["concat", ["get", "icon"], "-15"],
-            "icon-size": 1,
-            "icon-allow-overlap": true,
-            // get the title name from the source's "title" property
-            "text-field": ["get", "{{ include.data.markers.title | default: 'name' }}"],
-            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-            "text-offset": [0, 0.6],
-            "text-anchor": "top"
-        },
-        "paint": {
-            "icon-color": "#ffcc00",
-            "icon-halo-color": "#2266AA",
-            "text-color": "#ffffff"
-        }
+function fillMapContainer() {
+    mapboxgl.accessToken = "{{ include.data.token }}";
+    var map = new mapboxgl.Map({
+        container: "map-container",
+        style: "{{ include.data.style }}",
+        center: [{{ include.data.center.longitude | default: 0.0 }}, {{ include.data.center.latitude | default: 0.0 }}],
+        zoom: {{ include.data.zoom | default: 1 }},
+        dragPan: true
     });
 
-});
+    map.on('load', function () {
 
+        map.addLayer({
+            "id": "points",
+            "type": "symbol",
+            "source": {
+                "type": "geojson",
+                "data": data_points
+            },
+            "layout": {
+                // get the icon name from the source's "icon" property
+                // concatenate the name to get an icon from the style's sprite sheet
+                "icon-image": ["concat", ["get", "icon"], "-15"],
+                "icon-size": 1,
+                "icon-allow-overlap": true,
+                // get the title name from the source's "title" property
+                "text-field": ["get", "{{ include.data.markers.title | default: 'name' }}"],
+                "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+                "text-offset": [0, 0.6],
+                "text-anchor": "top"
+            },
+            "paint": {
+                "icon-color": "#ffcc00",
+                "icon-halo-color": "#2266AA",
+                "text-color": "#ffffff"
+            }
+        });
 
-// When a click event occurs on a feature in the places layer, open a popup at the
-// location of the feature, with description HTML from its properties.
-map.on('click', 'points', function(e) {
-    var coordinates = e.features[0].geometry.coordinates.slice();
-    var description = e.features[0].properties.{{ include.data.markers.popup.text }};
-     
-    // Ensure that if the map is zoomed out such that multiple
-    // copies of the feature are visible, the popup appears
-    // over the copy being pointed to.
-    while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-    }
-     
-    new mapboxgl.Popup()
-        .setLngLat(coordinates)
-        .setHTML(description)
-        .addTo(map);
-});
-     
+    });
+
+    // When a click event occurs on a feature in the places layer, open a popup at the
+    // location of the feature, with description HTML from its properties.
+    map.on('click', 'points', function(e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.{{ include.data.markers.popup.text }};
+         
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+         
+        new mapboxgl.Popup()
+            .setLngLat(coordinates)
+            .setHTML(description)
+            .addTo(map);
+    });
+         
     // Change the cursor to a pointer when the mouse is over the places layer.
-map.on('mouseenter', 'points', function() {
-    map.getCanvas().style.cursor = 'pointer';
-});
-     
+    map.on('mouseenter', 'points', function() {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+         
     // Change it back to a pointer when it leaves.
-map.on('mouseleave', 'points', function() {
-    map.getCanvas().style.cursor = '';
-});
+    map.on('mouseleave', 'points', function() {
+        map.getCanvas().style.cursor = '';
+    });
+}
 </script>
+<script src="{{ 'assets/js/mapbox-gl.min.js' | absolute_url }}" onload="fillMapContainer()" defer ></script>
