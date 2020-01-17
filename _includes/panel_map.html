@@ -1,33 +1,5 @@
 <link rel="stylesheet" href="{{ 'assets/css/mapbox-gl.css' | absolute_url }}" />
-<style>
-body { margin: 0; padding: 0; }
-#map-container { position: relative; top: 0; bottom: 0; width: 100%; };
- 
-#marker {
-    background-size: cover;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-}
- 
-.mapboxgl-popup {
-    max-width: 240px;
-}
-
-.mapboxgl-popup-close-button {
-  display: none;
-}
-
-.mapboxgl-popup-content {
-  color: #000000;
-  max-width: 220px;
-}
-
-.mapboxgl-popup-content-wrapper {
-  padding: 1%;
-}
-</style>
+<link rel="stylesheet" href="{{ 'assets/css/mapbox-gl.panel.css' | absolute_url }}" />
 <div class="intro {{ include.style.header.joined }} {{ include.style.header.color }}">
     <h2 class="major">{{ include.header.title }}</h2>
     <p>{{ include.header.description }}</p>
@@ -35,11 +7,12 @@ body { margin: 0; padding: 0; }
 <div id='map-container'></div>
 <script>
 var data_points;
-fetch("{{ include.data.file | absolute_url }}")
-    .then(response => data_points = response.json())
-    .then(json => data_points = json);
 
 function fillMapContainer() {
+    fetch("{{ include.data.file | absolute_url }}")
+        .then(response => data_points = response.json())
+        .then(json => data_points = json);
+    
     mapboxgl.accessToken = "{{ include.data.token }}";
     var map = new mapboxgl.Map({
         container: "map-container",
