@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script type="text/javascript" >
     const contactFormElement = document.getElementById("{{ include.form_id | default: 'contact-form' }}");
     const nameInputElement = document.getElementById("{{ include.name_input_id | default: 'contact-name' }}");
     const emailInputElement = document.getElementById("{{ include.email_input_id | default: 'contact-email' }}");
@@ -49,4 +49,4 @@
         });
     };
 </script>
-<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" defer></script>
