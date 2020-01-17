@@ -4,7 +4,11 @@
     <title>{{ include.title }} - {{ include.subtitle }}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="{{ 'assets/css/main.css' | absolute_url }}" />
+    <link rel="stylesheet" href="{{ 'assets/css/main.css' | absolute_url }}" media="all" />
+    <link rel="stylesheet" href="{{ 'assets/css/large.css' | absolute_url }}" media="screen and (min-width: 981px) and (max-width:1680px)" />
+    <link rel="stylesheet" href="{{ 'assets/css/medium.css' | absolute_url }}" media="screen and (min-width: 737px) and (max-width:980px)" />
+    <link rel="stylesheet" href="{{ 'assets/css/small.css' | absolute_url }}" media="screen and (max-width:736px)" />
+    <link rel="stylesheet" href="{{ 'assets/css/short.css' | absolute_url }}" media="screen and (min-aspect-ratio:16/7)" />
     {%- if include.stylesheets -%}
     {%- for file in include.stylesheets -%}
     <link rel="stylesheet" href="{{ file.url | absolute_url }}" />
