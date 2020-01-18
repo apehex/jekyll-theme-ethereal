@@ -7,129 +7,116 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i");
 
 /*
-	Ethereal by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Ethereal by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
-// Breakpoints.
-
-	@include breakpoints((
-		xlarge:   ( 1281px,  1680px ),
-		large:    ( 981px,   1280px ),
-		medium:   ( 737px,   980px  ),
-		small:    ( 481px,   736px  ),
-		xsmall:   ( 361px,   480px  ),
-		xxsmall:  ( null,    360px  ),
-		short:    '(min-aspect-ratio: 16/7)',
-		xshort:   '(min-aspect-ratio: 16/6)'
-	));
 
 // Mixins.
 
-	@mixin gradient-background($tint: false, $opacity: 0.25, $stop1: 25%, $stop2: 50%, $angle: 45deg) {
-		$background-image: (
-			url('./images/overlay.png'),
-			linear-gradient($angle, transparentize(_palette(accent1), (1 - $opacity)) $stop1, transparentize(_palette(accent2), (1 - $opacity)) $stop2, transparentize(_palette(accent3), (1 - $opacity)))
-		);
+@mixin gradient-background($tint: false, $opacity: 0.25, $stop1: 25%, $stop2: 50%, $angle: 45deg) {
+    $background-image: (
+        url('./images/overlay.png'),
+        linear-gradient($angle, transparentize(_palette(accent1), (1 - $opacity)) $stop1, transparentize(_palette(accent2), (1 - $opacity)) $stop2, transparentize(_palette(accent3), (1 - $opacity)))
+    );
 
-		$background-size: (
-			128px 128px,
-			auto
-		);
+    $background-size: (
+        128px 128px,
+        auto
+    );
 
-		@if ($tint) {
-			$x: linear-gradient(0deg, rgba(0,0,0,0.125), rgba(0,0,0,0.125));
-			$y: auto;
-			$background-image: append($background-image, $x);
-			$background-size: append($background-size, $y);
-		}
+    @if ($tint) {
+        $x: linear-gradient(0deg, rgba(0,0,0,0.125), rgba(0,0,0,0.125));
+        $y: auto;
+        $background-image: append($background-image, $x);
+        $background-size: append($background-size, $y);
+    }
 
-		background-image: $background-image;
-		background-size: $background-size;
-	}
+    background-image: $background-image;
+    background-size: $background-size;
+}
 
-	@mixin gradient-background-small($tint: false, $opacity: 0.25, $stop1: 25%, $stop2: 50%) {
-		@include gradient-background($tint, $opacity, $stop1, $stop2, 135deg);
-	}
+@mixin gradient-background-small($tint: false, $opacity: 0.25, $stop1: 25%, $stop2: 50%) {
+    @include gradient-background($tint, $opacity, $stop1, $stop2, 135deg);
+}
 
-	@mixin spans($x) {
-		@for $i from 0 through 10 {
+@mixin spans($x) {
+    @for $i from 0 through 10 {
 
-			@if ($i > 0) {
-				.span-#{$i} {
-					width: ($x * $i);
-				}
-			}
+        @if ($i > 0) {
+            .span-#{$i} {
+                width: ($x * $i);
+            }
+        }
 
-			@if ($i < 10) {
-				.span-#{$i}-25 {
-					width: ($x * $i) + ($x * 0.25);
-				}
+        @if ($i < 10) {
+            .span-#{$i}-25 {
+                width: ($x * $i) + ($x * 0.25);
+            }
 
-				.span-#{$i}-5 {
-					width: ($x * $i) + ($x * 0.5);
-				}
+            .span-#{$i}-5 {
+                width: ($x * $i) + ($x * 0.5);
+            }
 
-				.span-#{$i}-75 {
-					width: ($x * $i) + ($x * 0.75);
-				}
-			}
-		}
-	}
+            .span-#{$i}-75 {
+                width: ($x * $i) + ($x * 0.75);
+            }
+        }
+    }
+}
 
-	@mixin spans-small($x) {
-		@for $i from 0 through 10 {
+@mixin spans-small($x) {
+    @for $i from 0 through 10 {
 
-			@if ($i > 0) {
-				.span-#{$i} {
-					width: 100%;
-				}
-			}
+        @if ($i > 0) {
+            .span-#{$i} {
+                width: 100%;
+            }
+        }
 
-			@if ($i < 10) {
-				.span-#{$i}-25 {
-					width: 100%;
-				}
+        @if ($i < 10) {
+            .span-#{$i}-25 {
+                width: 100%;
+            }
 
-				.span-#{$i}-5 {
-					width: 100%;
-				}
+            .span-#{$i}-5 {
+                width: 100%;
+            }
 
-				.span-#{$i}-75 {
-					width: 100%;
-				}
-			}
-		}
-	}
+            .span-#{$i}-75 {
+                width: 100%;
+            }
+        }
+    }
+}
 
 // Base.
 
-	@import 'main/base/reset';
-	@import 'main/base/page';
-	@import 'main/base/typography';
+@import 'main/base/reset';
+@import 'main/base/page';
+@import 'main/base/typography';
 
 // Component.
 
-	@import 'main/components/cookieconsent';
-	@import 'main/components/form';
-	@import 'main/components/icon';
-	@import 'main/components/image';
-	@import 'main/components/list';
-	@import 'main/components/actions';
-	@import 'main/components/icons';
-	@import 'main/components/grid-icons';
-	@import 'main/components/contact-icons';
-	@import 'main/components/table';
-	@import 'main/components/button';
-	@import 'main/components/gallery';
-	@import 'main/components/panel';
-	@import 'main/components/panel-banner';
-	@import 'main/components/panel-spotlight';
+@import 'main/components/cookieconsent';
+@import 'main/components/form';
+@import 'main/components/icon';
+@import 'main/components/image';
+@import 'main/components/list';
+@import 'main/components/actions';
+@import 'main/components/icons';
+@import 'main/components/grid-icons';
+@import 'main/components/contact-icons';
+@import 'main/components/table';
+@import 'main/components/button';
+@import 'main/components/gallery';
+@import 'main/components/panel';
+@import 'main/components/panel-banner';
+@import 'main/components/panel-spotlight';
 
 // Layout.
 
-	@import 'main/layout/footer';
-	@import 'main/layout/header';
-	@import 'main/layout/page-wrapper';
-	@import 'main/layout/wrapper';
+@import 'main/layout/footer';
+@import 'main/layout/header';
+@import 'main/layout/page-wrapper';
+@import 'main/layout/wrapper';
