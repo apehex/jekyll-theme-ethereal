@@ -12,7 +12,14 @@
     <title>Jekyll Theme Ethereal - A Horizontal Site Template</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/main.css" /><link rel="alternate" hreflang="" href="/" /><link rel="alternate" hreflang="en" href="/en/" /><link rel="alternate" hreflang="fr" href="/fr/" /><link rel="icon" href="https://apehex.github.io/jekyll-theme-ethereal/assets/images/favicon.ico" /><noscript><link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/noscript.css" /></noscript>
+    <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/main.css" media="all" />
+    <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/large.css" media="screen and (min-width: 981px) and (max-width:1680px)" />
+    <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/medium.css" media="screen and (min-width: 737px) and (max-width:980px)" />
+    <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/small.css" media="screen and (max-width:736px)" />
+    <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/short.css" media="screen and (min-aspect-ratio:16/7)" />
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'">
+    <link rel="preload" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/fontawesome-all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'">
+    <link rel="preload" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/cookieconsent.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'"><link rel="alternate" hreflang="" href="/" /><link rel="alternate" hreflang="en" href="/en/" /><link rel="alternate" hreflang="fr" href="/fr/" /><link rel="icon" href="https://apehex.github.io/jekyll-theme-ethereal/assets/images/favicon.ico" /><noscript><link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/noscript.css" /></noscript>
     <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Jekyll Theme Ethereal | Ethereal</title>
 <meta name="generator" content="Jekyll v4.0.0" />
@@ -29,7 +36,7 @@
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@HTML5 Up" />
 <script type="application/ld+json">
-{"@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://apehex.github.io/jekyll-theme-ethereal/assets/images/logo.png"},"name":"HTML5 Up"},"url":"https://apehex.github.io/jekyll-theme-ethereal/en/","author":{"@type":"Person","name":"HTML5 Up"},"description":"This is Ethereal, my latest, greatest, and quite possibly most unique template for HTML5 UP. Since releasing Parallelism 3-4 years ago (!!!), I’ve been dying to do another side-scrolling template with more in the way of flexibility/customization potential. The result is this template, Ethereal, which combines a robust side-scrolling framework of my own creation (with various “scroll-assist” features like drag/momentum scrolling, keyboard shortcuts, etc.) with a unique look and feel, a lightbox gallery, tons of customization options, and, of course, full responsiveness. Hope you dig it :)","headline":"Jekyll Theme Ethereal","@context":"https://schema.org"}</script>
+{"@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://apehex.github.io/jekyll-theme-ethereal/assets/images/logo.png"},"name":"HTML5 Up"},"url":"https://apehex.github.io/jekyll-theme-ethereal/en/","author":{"@type":"Person","name":"HTML5 Up"},"headline":"Jekyll Theme Ethereal","description":"This is Ethereal, my latest, greatest, and quite possibly most unique template for HTML5 UP. Since releasing Parallelism 3-4 years ago (!!!), I’ve been dying to do another side-scrolling template with more in the way of flexibility/customization potential. The result is this template, Ethereal, which combines a robust side-scrolling framework of my own creation (with various “scroll-assist” features like drag/momentum scrolling, keyboard shortcuts, etc.) with a unique look and feel, a lightbox gallery, tons of customization options, and, of course, full responsiveness. Hope you dig it :)","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -40,7 +47,10 @@
         <!-- Page Wrapper -->
         <div id="page-wrapper">
 
-            <div id="language-selector">
+            <!-- Wrapper -->
+            <div id="wrapper">
+
+                <div id="language-selector">
 	<ul class="language"><li>
 		    <a href="https://apehex.github.io/jekyll-theme-ethereal/" class=""></a>
 		</li><li>
@@ -50,9 +60,6 @@
 		</li></ul>
 </div>
 
-
-            <!-- Wrapper -->
-            <div id="wrapper">
 
                 <section
 class="panel banner 3 right "
@@ -177,7 +184,7 @@ id="contact"><div class="intro color4">
 
     </div>
 </div>
-<script type="text/javascript">
+<script type="text/javascript" >
     const contactFormElement = document.getElementById("contact-form");
     const nameInputElement = document.getElementById("contact-name");
     const emailInputElement = document.getElementById("contact-email");
@@ -228,7 +235,7 @@ id="contact"><div class="intro color4">
         });
     };
 </script>
-<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" defer></script>
 
 </section>
 <section
@@ -502,9 +509,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 </section>
 
 
-            </div>
-
-            <!-- Footer -->
+                <!-- Footer -->
 <footer id="footer">
     <ul class="copyright">
         <li>&copy; Untitled - CC0</li>
@@ -513,27 +518,18 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 </footer>
 
 
+            </div>
+
         </div>
 
         <!-- Scripts -->
-<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/jquery.min.js" type="text/javascript" ></script>
-<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/browser.min.js" type="text/javascript" ></script>
-<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/breakpoints.min.js" type="text/javascript" ></script>
-<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/lazy-loading.js" type="text/javascript" ></script>
-<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/main.js" type="text/javascript" ></script>
-<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/cookieconsent.min.js" data-cfasync="false" type="text/javascript" ></script>
-<script>
-window.cookieconsent.initialise({
-    "palette": {
-        "popup": {
-            "background": "#252e39"
-        },
-        "button": {
-            "background": "#14a7d0"
-        }
-    }
-});
-</script>
+<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/jquery.min.js" type="text/javascript" defer ></script>
+<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/browser.min.js" type="text/javascript" defer ></script>
+<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/breakpoints.min.js" type="text/javascript" defer ></script>
+<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/lazy-loading.js" type="text/javascript" defer ></script>
+<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/main.js" type="text/javascript" defer ></script>
+<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/cookieconsent.min.js" data-cfasync="false" type="text/javascript" defer ></script>
+<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/cookieconsent.style.min.js" type="text/javascript" defer ></script>
 
     </body>
 </html>
