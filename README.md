@@ -4,7 +4,7 @@
 
 You can preview the theme [here](https://apehex.github.io/jekyll-theme-ethereal)
 
-![Ethereal Theme](assets/images/screenshot.jpg "Ethereal Theme")
+![Ethereal Theme](assets/images/screenshot.webp "Ethereal Theme")
 
 # Features
 
@@ -113,7 +113,7 @@ After:
 
 #### Using the browser functionality
 
-- add `loading="lazy"` (optional, depends on browser support)
+- add `loading="lazy"`
 
 Before:
 ```html
@@ -124,6 +124,8 @@ After:
 ```html
 <img loading="lazy" src="{{ 'assets/images/content.jpg' | absolute_url }}" />
 ```
+
+> This functionality is not supported by all the browsers!
 
 ### Compression and file formats
 
