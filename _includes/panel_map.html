@@ -10,7 +10,7 @@ var data_points;
 
 function fillMapContainer() {
     fetch("{{ include.data.file | absolute_url }}")
-        .then(response => data_points = response.json())
+        .then(response => response.json())
         .then(json => data_points = json);
     
     mapboxgl.accessToken = "{{ include.data.token }}";
