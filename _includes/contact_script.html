@@ -11,11 +11,6 @@
             && emailInputElement.checkValidity()
             && messageInputElement.checkValidity())
     };
-    
-    const isRecaptchaValid = function() {
-        var responseToken = grecaptcha.getResponse(recaptchaWidget);
-        return true;
-    };
 
     const disableSubmitInputElement = function (disabled = true) {
         submitInputElement.disabled = disabled;
