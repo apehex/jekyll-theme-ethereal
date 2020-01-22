@@ -51,9 +51,25 @@
     };
     
     const sendContactMessage = function() {
-        encodeURIComponent(nameInputElement.value);
-        encodeURIComponent(emailInputElement.value);
-        encodeURIComponent(messageInputElement.value);
+        const data = {
+            name: encodeURIComponent(nameInputElement.value),
+            email: encodeURIComponent(emailInputElement.value),
+            message: encodeURIComponent(messageInputElement),
+            token: grecaptcha.getResponse(recaptchaWidget)
+        };
+        
+        fetch("{{ '/contact' | absolute_url }}", {
+            method: 'POST',
+            mode: 'same-origin',
+            headers: {'Content-Type': 'application/json',},
+            body: JSON.stringify(data),
+        })
+        .then((response) => {
+            alert('Message sent!');
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
     };
     
     var onloadCallback = function() {
