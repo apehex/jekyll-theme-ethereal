@@ -13,13 +13,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/main.css" media="all" />
-    <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/large.css" media="screen and (min-width: 981px) and (max-width:1680px)" />
+    <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/large.css" media="screen and (min-width: 981px)" />
     <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/medium.css" media="screen and (min-width: 737px) and (max-width:980px)" />
     <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/small.css" media="screen and (max-width:736px)" />
     <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/short.css" media="screen and (min-aspect-ratio:16/7)" />
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'">
     <link rel="preload" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/fontawesome-all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'">
-    <link rel="preload" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/cookieconsent.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'"><link rel="alternate" hreflang="en" href="/en/homespace/" /><link rel="alternate" hreflang="fr" href="/fr/homespace/" /><link rel="icon" href="https://apehex.github.io/jekyll-theme-ethereal/assets/images/favicon.ico" /><noscript><link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/noscript.css" /></noscript>
+    <link rel="preload" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/cookieconsent.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'"><link rel="alternate" hreflang="en" href="/en/homespace/" /><link rel="alternate" hreflang="fr" href="/fr/homespace/" /><link rel="icon" href="https://apehex.github.io/jekyll-theme-ethereal/assets/images/favicon.ico" /><noscript><link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/noscript.css" /></noscript>
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i&display=swap" /></noscript>
+    <noscript><link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/fontawesome-all.min.css" /></noscript>
+    <noscript><link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/cookieconsent.min.css" /></noscript>
     <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Page Homespace | Ethereal</title>
 <meta name="generator" content="Jekyll v4.0.0" />
@@ -44,13 +47,7 @@
 
     <body class="is-preload">
 
-        <!-- Page Wrapper -->
-        <div id="page-wrapper">
-
-            <!-- Wrapper -->
-            <div id="wrapper">
-
-                <div id="language-selector">
+        <div id="language-selector">
 	<ul class="language"><li>
 		    <a href="https://apehex.github.io/jekyll-theme-ethereal/en/homespace/" class="en">en</a>
 		</li><li>
@@ -58,6 +55,12 @@
 		</li></ul>
 </div>
 
+
+        <!-- Page Wrapper -->
+        <div id="page-wrapper">
+
+            <!-- Wrapper -->
+            <div id="wrapper">
 
                 <section
 class="panel banner 3 right "
@@ -84,8 +87,8 @@ data-position="25% 25%">
 </section>
 <section
 class="panel map large right color1-alt"
-id="map"><link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/mapbox-gl.css" />
-<link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/mapbox-gl.panel.css" />
+id="map"><link rel="preload" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/mapbox-gl.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'">
+<link rel="preload" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/mapbox-gl.panel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'">
 <div class="intro  color1">
     <h2 class="major">Map(box)</h2>
     <p>Les données viennent du site <a href="https://launchlibrary.net/">launch library</a> et sont au format (geo)json.</p>
@@ -96,7 +99,7 @@ var data_points;
 
 function fillMapContainer() {
     fetch("https://apehex.github.io/jekyll-theme-ethereal/assets/data/space_launches.json")
-        .then(response => data_points = response.json())
+        .then(response => response.json())
         .then(json => data_points = json);
     
     mapboxgl.accessToken = "pk.eyJ1IjoibW9vZHVsZSIsImEiOiJjam1lcW1qNW0wcG9rM3dsbHY2N2ZyZ29iIn0.TkBXhBxfadbKKkRH7320Ng";
@@ -172,7 +175,11 @@ function fillMapContainer() {
 </section>
 
 
-                <!-- Footer -->
+            </div>
+
+        </div>
+
+        <!-- Footer -->
 <footer id="footer">
     <ul class="copyright">
         <li>&copy; Untitled - CC0</li>
@@ -181,16 +188,12 @@ function fillMapContainer() {
 </footer>
 
 
-            </div>
-
-        </div>
-
         <!-- Scripts -->
 <script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/jquery.min.js" type="text/javascript" defer ></script>
 <script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/browser.min.js" type="text/javascript" defer ></script>
 <script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/breakpoints.min.js" type="text/javascript" defer ></script>
-<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/lazy-loading.js" type="text/javascript" defer ></script>
-<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/main.js" type="text/javascript" defer ></script>
+<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/lazy-loading.min.js" type="text/javascript" defer ></script>
+<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/main.min.js" type="text/javascript" defer ></script>
 <script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/cookieconsent.min.js" data-cfasync="false" type="text/javascript" defer ></script>
 <script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/cookieconsent.style.min.js" type="text/javascript" defer ></script>
 

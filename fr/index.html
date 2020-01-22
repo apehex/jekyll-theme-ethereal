@@ -13,13 +13,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/main.css" media="all" />
-    <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/large.css" media="screen and (min-width: 981px) and (max-width:1680px)" />
+    <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/large.css" media="screen and (min-width: 981px)" />
     <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/medium.css" media="screen and (min-width: 737px) and (max-width:980px)" />
     <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/small.css" media="screen and (max-width:736px)" />
     <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/short.css" media="screen and (min-aspect-ratio:16/7)" />
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'">
     <link rel="preload" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/fontawesome-all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'">
-    <link rel="preload" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/cookieconsent.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'"><link rel="alternate" hreflang="" href="/" /><link rel="alternate" hreflang="en" href="/en/" /><link rel="alternate" hreflang="fr" href="/fr/" /><link rel="icon" href="https://apehex.github.io/jekyll-theme-ethereal/assets/images/favicon.ico" /><noscript><link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/noscript.css" /></noscript>
+    <link rel="preload" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/cookieconsent.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'"><link rel="alternate" hreflang="" href="/" /><link rel="alternate" hreflang="en" href="/en/" /><link rel="alternate" hreflang="fr" href="/fr/" /><link rel="icon" href="https://apehex.github.io/jekyll-theme-ethereal/assets/images/favicon.ico" /><noscript><link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/noscript.css" /></noscript>
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i&display=swap" /></noscript>
+    <noscript><link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/fontawesome-all.min.css" /></noscript>
+    <noscript><link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-ethereal/assets/css/cookieconsent.min.css" /></noscript>
     <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Thème Jekyll Ethereal | Ethereal</title>
 <meta name="generator" content="Jekyll v4.0.0" />
@@ -44,13 +47,7 @@
 
     <body class="is-preload">
 
-        <!-- Page Wrapper -->
-        <div id="page-wrapper">
-
-            <!-- Wrapper -->
-            <div id="wrapper">
-
-                <div id="language-selector">
+        <div id="language-selector">
 	<ul class="language"><li>
 		    <a href="https://apehex.github.io/jekyll-theme-ethereal/" class=""></a>
 		</li><li>
@@ -60,6 +57,12 @@
 		</li></ul>
 </div>
 
+
+        <!-- Page Wrapper -->
+        <div id="page-wrapper">
+
+            <!-- Wrapper -->
+            <div id="wrapper">
 
                 <section
 class="panel banner 3 right "
@@ -155,26 +158,30 @@ id="contact"><div class="intro color4">
 </div>
 <div class="inner columns divided">
     <div class="span-3-25">
-        <form method="post" id="contact-form" action="#" onsubmit="sendContactMessage()" onreset="resetContactForm()" >
+        <form method="post" id="contact-form" action="javascript:void(0);" onsubmit="processContactRequest()" onreset="resetContactForm()" >
     <div class="fields">
         <div class="field half">
             <label for="name">Name</label>
-            <input type="text" name="contact-name" id="contact-name" required minlength="4" maxlength="64" />
+            <input type="text" name="contact-name" id="contact-name" placeholder="John Doe" required minlength="4" maxlength="64" onfocusout="toggleSubmitInputElement()" />
         </div>
         <div class="field half">
             <label for="email">Email</label>
-            <input type="email" name="contact-email" id="contact-email" required minlength="8" maxlength="64" />
+            <input type="email" name="contact-email" id="contact-email" placeholder="john.doe@example.com" required minlength="8" maxlength="64" onfocusout="toggleSubmitInputElement()" />
         </div>
         <div class="field">
             <label for="message">Message</label>
-            <textarea name="contact-message" id="contact-message" rows="4"vrequired minlength="16" maxlength="256" ></textarea>
+            <textarea name="contact-message" id="contact-message" placeholder="Please reach out!" rows="4" required minlength="16" maxlength="256" onfocusout="toggleSubmitInputElement()" ></textarea>
         </div>
     </div>
     <ul class="actions">
-        <li><div id="recaptcha-checkbox" ></div></li>
         <li><input type="submit" id="contact-submit-button" value="Send Message" class="button primary fa-envelope" disabled /></li>
         <li><input type="reset" id="contact-reset-button" value="Reset" class="icon button fa-undo" /></li>
     </ul>
+    <div id="modal-recaptcha-window" class="modal" tabIndex="-1">
+        <div class="inner">
+            <div id="recaptcha-checkbox" ></div>
+        </div>
+    </div>
 </form>
 
     </div>
@@ -190,6 +197,7 @@ id="contact"><div class="intro color4">
     const emailInputElement = document.getElementById("contact-email");
     const messageInputElement = document.getElementById("contact-message");
     const submitInputElement = document.getElementById("contact-submit-button");
+    const modalWindowElement = document.getElementById("modal-recaptcha-window");
     var recaptchaWidget;
 
     const isInputValid = function() {
@@ -197,15 +205,41 @@ id="contact"><div class="intro color4">
             && emailInputElement.checkValidity()
             && messageInputElement.checkValidity())
     };
-    
-    const isRecaptchaValid = function() {
-        var responseToken = grecaptcha.getResponse(recaptchaWidget);
-        return true;
-    };
 
     const disableSubmitInputElement = function (disabled = true) {
         submitInputElement.disabled = disabled;
     }
+
+    const toggleSubmitInputElement = function() {
+        if (isInputValid()) {
+            disableSubmitInputElement(false);
+        } else {
+            disableSubmitInputElement();
+        }
+    };
+
+    const showModalWindow = function() {
+        modalWindowElement.classList.add('visible');
+        modalWindowElement.classList.add('loaded');
+        modalWindowElement.focus();
+    }
+
+    const hideModalWindow = function() {
+        modalWindowElement.classList.remove('loaded');
+        modalWindowElement.classList.remove('visible');
+        contactFormElement.focus();
+    }
+
+    const processContactRequest = function() {
+        if (grecaptcha.getResponse(recaptchaWidget).length > 0) {
+            sendContactMessage();
+            hideModalWindow();
+            resetContactForm();
+            grecaptcha.reset();
+        } else {
+            showModalWindow();
+        }
+    };
 
     const resetContactForm = function() {
         contactFormElement.reset();
@@ -213,29 +247,40 @@ id="contact"><div class="intro color4">
     };
     
     const sendContactMessage = function() {
-        encodeURIComponent(nameInputElement.value);
-        encodeURIComponent(emailInputElement.value);
-        encodeURIComponent(messageInputElement.value);
+        const data = {
+            name: encodeURIComponent(nameInputElement.value),
+            email: encodeURIComponent(emailInputElement.value),
+            message: encodeURIComponent(messageInputElement),
+            token: grecaptcha.getResponse(recaptchaWidget)
+        };
+        
+        fetch("https://apehex.github.io/jekyll-theme-ethereal/contact", {
+            method: 'POST',
+            mode: 'same-origin',
+            headers: {'Content-Type': 'application/json',},
+            body: JSON.stringify(data),
+        })
+        .then((response) => {
+            alert('Message sent!');
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
     };
     
     var onloadCallback = function() {
-        var verifyForm = function(response) {
-            if (isInputValid() && isRecaptchaValid()) {
-                disableSubmitInputElement(false);
-            } else {
-                disableSubmitInputElement();
-            }
-        };
         recaptchaWidget = grecaptcha.render('recaptcha-checkbox', {
             'sitekey' : '6LfpcsgUAAAAAAHiQcCy_DC4sLQaq4mhMqSUSdaH',
             'theme' : 'dark',
-            'callback' : verifyForm,
-            'expired-callback': disableSubmitInputElement,
-            'size' : 'compact'
+            'size' : 'compact',
+            'callback' : processContactRequest
         });
     };
+
+    modalWindowElement.addEventListener('click', hideModalWindow);
+    modalWindowElement.addEventListener('keyup', hideModalWindow);
 </script>
-<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" defer></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 
 </section>
 <section
@@ -509,7 +554,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 </section>
 
 
-                <!-- Footer -->
+            </div>
+
+        </div>
+
+        <!-- Footer -->
 <footer id="footer">
     <ul class="copyright">
         <li>&copy; Untitled - CC0</li>
@@ -518,16 +567,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 </footer>
 
 
-            </div>
-
-        </div>
-
         <!-- Scripts -->
 <script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/jquery.min.js" type="text/javascript" defer ></script>
 <script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/browser.min.js" type="text/javascript" defer ></script>
 <script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/breakpoints.min.js" type="text/javascript" defer ></script>
-<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/lazy-loading.js" type="text/javascript" defer ></script>
-<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/main.js" type="text/javascript" defer ></script>
+<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/lazy-loading.min.js" type="text/javascript" defer ></script>
+<script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/main.min.js" type="text/javascript" defer ></script>
 <script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/cookieconsent.min.js" data-cfasync="false" type="text/javascript" defer ></script>
 <script src="https://apehex.github.io/jekyll-theme-ethereal/assets/js/cookieconsent.style.min.js" type="text/javascript" defer ></script>
 

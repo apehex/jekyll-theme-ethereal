@@ -85,7 +85,7 @@
         });
 
     // Play initial animations on page load.
-        $window.on('load', function() {
+        $window.ready(function() {
             window.setTimeout(function() {
                 $body.removeClass('is-preload');
             }, 100);
@@ -652,7 +652,7 @@
                     href = $a.attr('href');
 
                 // Not an image? Bail.
-                    if (!href.match(/\.(jpg|gif|png|mp4)$/))
+                    if (!href.match(/\.(jpg|gif|png|mp4|webp)$/))
                         return;
 
                 // Prevent default.
