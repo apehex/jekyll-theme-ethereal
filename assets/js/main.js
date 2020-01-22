@@ -85,7 +85,7 @@
         });
 
     // Play initial animations on page load.
-        $window.on('load', function() {
+        $window.ready(function() {
             window.setTimeout(function() {
                 $body.removeClass('is-preload');
             }, 100);
