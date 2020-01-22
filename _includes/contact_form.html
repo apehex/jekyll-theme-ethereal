@@ -2,15 +2,15 @@
     <div class="fields">
         <div class="field half">
             <label for="name">Name</label>
-            <input type="text" name="{{ include.name_input_id | default: 'contact-name' }}" id="{{ include.name_input_id | default: 'contact-name' }}" required minlength="4" maxlength="64" />
+            <input type="text" name="{{ include.name_input_id | default: 'contact-name' }}" id="{{ include.name_input_id | default: 'contact-name' }}" placeholder="John Doe" required minlength="4" maxlength="64" />
         </div>
         <div class="field half">
             <label for="email">Email</label>
-            <input type="email" name="{{ include.email_input_id | default: 'contact-email' }}" id="{{ include.email_input_id | default: 'contact-email' }}" required minlength="8" maxlength="64" />
+            <input type="email" name="{{ include.email_input_id | default: 'contact-email' }}" id="{{ include.email_input_id | default: 'contact-email' }}" placeholder="john.doe@example.com" required minlength="8" maxlength="64" />
         </div>
         <div class="field">
             <label for="message">Message</label>
-            <textarea name="{{ include.message_input_id | default: 'contact-message' }}" id="{{ include.message_input_id | default: 'contact-message' }}" rows="4"vrequired minlength="16" maxlength="256" ></textarea>
+            <textarea name="{{ include.message_input_id | default: 'contact-message' }}" id="{{ include.message_input_id | default: 'contact-message' }}" placeholder="Please reach out!" rows="4" required minlength="16" maxlength="256" ></textarea>
         </div>
     </div>
     <ul class="actions">
