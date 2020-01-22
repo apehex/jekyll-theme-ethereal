@@ -40,6 +40,8 @@
     const {{ include.onsubmit_callback | default: 'processContactRequest' }} = function() {
         if (grecaptcha.getResponse(recaptchaWidget).length > 0) {
             sendContactMessage();
+            hideModalWindow();
+            resetContactForm();
         } else {
             showModalWindow();
         }
