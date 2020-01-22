@@ -4,6 +4,7 @@
     }
 
     body {
+        @include vendor('flex-direction', 'column');
         height: auto;
         overflow-x: hidden;
         overflow-y: auto;

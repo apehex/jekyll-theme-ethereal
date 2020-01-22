@@ -20,21 +20,21 @@
 
     <body class="is-preload">
 
+        {% include language.html %}
+
         <!-- Page Wrapper -->
         <div id="page-wrapper">
 
             <!-- Wrapper -->
             <div id="wrapper">
 
-                {% include language.html %}
-
                 {{ content }}
-
-                {% include footer.html %}
 
             </div>
 
         </div>
+
+        {% include footer.html %}
 
         {% include scripts.html scripts=scripts %}
 
