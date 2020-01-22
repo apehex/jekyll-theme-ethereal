@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="{{ 'assets/css/mapbox-gl.css' | absolute_url }}" />
-<link rel="stylesheet" href="{{ 'assets/css/mapbox-gl.panel.css' | absolute_url }}" />
+<link rel="preload" href="{{ 'assets/css/mapbox-gl.min.css' | absolute_url }}" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'">
+<link rel="preload" href="{{ 'assets/css/mapbox-gl.panel.min.css' | absolute_url }}" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'">
 <div class="intro {{ include.style.header.joined }} {{ include.style.header.color }}">
     <h2 class="major">{{ include.header.title }}</h2>
     <p>{{ include.header.description }}</p>
