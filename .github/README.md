@@ -4,7 +4,7 @@
 
 You can preview the theme [here](https://apehex.github.io/jekyll-theme-ethereal)
 
-![Ethereal Theme](assets/images/screenshot.webp "Ethereal Theme")
+![Ethereal Theme](../assets/images/screenshot.webp "Ethereal Theme")
 
 # Features
 
